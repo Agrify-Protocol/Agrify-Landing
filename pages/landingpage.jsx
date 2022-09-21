@@ -9,7 +9,7 @@ const LandingPage = () => {
           <h1 className=' text-[30px] md:text-[40px] leading-[32px] md:leading-[52px] w-full md:w-7/12 lg:text-[60px] text-white text-center'>
             welcome to the future of agriculture
           </h1>
-          <Link href='https://agrify-africa.netlify.app/'>
+          <Link href='#explore'>
             <button className=' p-3 px-12 lg:px-14 mt-6 lg:mt-12 text-[#0ABA43] hover:text-white bg-white hover:bg-black rounded-[50px]'>
               explore
             </button>
@@ -27,7 +27,7 @@ const LandingPage = () => {
           />
         </div>
       </div>
-      <div className='p-10 lg:p-14'>
+      <div id='explore' className='p-10 lg:p-14'>
         <div className='flex flex-col lg:flex-row justify-between gap-10'>
           <div className='lg:w-1/2 p-10 bg-[#F3FDD7] rounded-[1rem]'>
             <h1 className='text-2xl py-4 md:text-[40px]'>
@@ -38,7 +38,7 @@ const LandingPage = () => {
               discovering new markets that need your organic produce.
             </p>
             <Link href='https://agrify-africa.netlify.app/'>
-              <button className=' p-3 lg:p-4 border-black border-[1px] w-10/12 md:w-1/2 lg:w-1/3 my-6 md:mt-12 text-sm hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C] rounded-[50px]'>
+              <button className=' p-3 lg:p-4 border-black border-[1px] w-10/12 md:w-1/2 xl:w-1/3 my-6 md:mt-12 text-sm hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C] rounded-[50px]'>
                 go to marketplace
               </button>
             </Link>
@@ -53,7 +53,7 @@ const LandingPage = () => {
               produce suppliers, who are dedicated to safe and timely deliveries
               of produce across international borders
             </p>
-            <button className=' p-3 lg:p-4 border-black border-[1px] w-10/12 md:w-1/2 lg:w-1/3 mt-12 text-sm hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C] rounded-[50px]'>
+            <button className=' p-3 lg:p-4 border-black border-[1px] w-10/12 md:w-1/2 xl:w-1/3 mt-12 text-sm hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C] rounded-[50px]'>
               start verification
             </button>
             <img className='float-right' src='/images/man.svg' alt='' />
@@ -64,7 +64,7 @@ const LandingPage = () => {
           <h1 className=' text-2xl text-center p-4 lg:text-[40px]'>
             taking agricultural trade to the blockchain
           </h1>
-          <p className='text-md md:text-[20px] py-4 text-center text-[#666] w-10/12 md:w-8/12 lg:w-1/3'>
+          <p className='text-md md:text-[20px] py-4 text-center text-[#666] w-10/12 md:w-8/12 xl:w-1/3'>
             we’re building a new way to verify produce origin and supply on
             chain, making global agricultural trade faster and more secure
           </p>

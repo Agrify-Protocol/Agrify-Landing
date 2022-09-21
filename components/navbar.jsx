@@ -5,7 +5,7 @@ import { useEffect, useState, useRef } from "react";
 import NavMoreDropdown from "./NavMoreDropdown";
 import { BsThreeDots } from "react-icons/bs";
 
-const Navbar = () => {
+const Navbar = ({ isBlack }) => {
   const [moreToggle, setMoreToggle] = useState(false);
 
   // All states
@@ -56,7 +56,9 @@ const Navbar = () => {
             <img
               className={"w-[8.5rem]" + (sticky ? " hidden" : " ")}
               alt='logo'
-              src='/images/logo-white.svg'
+              src={
+                isBlack ? "/images/logo-black.svg" : "/images/logo-white.svg"
+              }
             />
             <img
               className={"w-[6.5rem]" + (sticky ? " " : " hidden")}
