@@ -16,9 +16,9 @@ const LandingPage = () => {
           <p className='text-center lg:text-left'>
             We use crypto to ensure that payments are processed and delivered
             speedily. You can then decide to convert your payment to a
-            cryptocurrency or fiat currency of your choice.{" "}
+            cryptocurrency or fiat currency of your choice.
           </p>
-          <Link href='#explore'>
+          <Link href='/seller-signup'>
             <button className=' p-3 px-12 lg:px-14 mt-6 lg:mt-12 text-white hover:text-white bg-[#011308] hover:bg-ag-green rounded-[50px]'>
               start verification
             </button>
@@ -47,10 +47,11 @@ const LandingPage = () => {
           vulputate eget scelerisque cursus habitant mi sit. Aliquet maecenas ac
           posuere porta quis.
         </p>
-
-        <button className=' p-3 lg:p-4 w-10/12 md:w-1/2 lg:w-1/5 m-6 font-light text-sm text-white hover:text-white bg-[#011308] hover:bg-[#0CC14C] rounded-[50px]'>
-          start verification
-        </button>
+        <Link href='/seller-signup'>
+          <button className=' p-3 lg:p-4 w-10/12 md:w-1/2 lg:w-1/5 m-6 font-light text-sm text-white hover:text-white bg-[#011308] hover:bg-[#0CC14C] rounded-[50px]'>
+            start verification
+          </button>
+        </Link>
       </div>
       <Footer />
     </div>

@@ -24,8 +24,10 @@ const SellerSignIn = () => {
       </div>
 
       <div className='w-full lg:ml-[22.93rem] p-8 md:p-10 lg:p-[5rem]'>
-        <div className='flex justify-between'>
-          <BiArrowBack size={28} />
+        <div className='flex cursor-pointer justify-between'>
+          <Link href='/suppliers'>
+            <BiArrowBack size={28} />
+          </Link>
           <a className='cursor-pointer text-slate-400'>Sign In</a>
         </div>
 
