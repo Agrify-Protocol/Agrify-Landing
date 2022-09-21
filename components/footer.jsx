@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='w-full flex justify-end mt-20'>
+        <div className='w-full hidden lg:flex justify-end mt-20'>
           <Image width={200} height={100} src='/images/logo.svg' />
         </div>
       </div>
