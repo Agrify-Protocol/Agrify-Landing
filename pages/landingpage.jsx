@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const LandingPage = () => {
   return (
@@ -8,9 +9,11 @@ const LandingPage = () => {
           <h1 className=' text-[30px] md:text-[40px] leading-[32px] md:leading-[52px] w-full md:w-7/12 lg:text-[60px] text-white text-center'>
             welcome to the future of agriculture
           </h1>
-          <button className=' p-3 px-12 lg:px-14 mt-6 lg:mt-12 text-[#0ABA43] hover:text-white bg-white hover:bg-black rounded-[50px]'>
-            explore
-          </button>
+          <Link href='https://agrify-africa.netlify.app/'>
+            <button className=' p-3 px-12 lg:px-14 mt-6 lg:mt-12 text-[#0ABA43] hover:text-white bg-white hover:bg-black rounded-[50px]'>
+              explore
+            </button>
+          </Link>
         </div>
 
         <div className='block h-screen'>
@@ -31,13 +34,14 @@ const LandingPage = () => {
               shop organic produce
             </h1>
             <p>
-              we’ve curated a community of small and large quantity organic
-              produce suppliers, who are dedicated to safe and timely deliveries
-              of produce across international borders
+              join our community of suppliers, and boost your income by
+              discovering new markets that need your organic produce.
             </p>
-            <button className=' p-3 lg:p-4 border-black border-[1px] w-10/12 md:w-1/2 lg:w-1/3 my-6 md:mt-12 text-sm hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C] rounded-[50px]'>
-              go to marketplace
-            </button>
+            <Link href='https://agrify-africa.netlify.app/'>
+              <button className=' p-3 lg:p-4 border-black border-[1px] w-10/12 md:w-1/2 lg:w-1/3 my-6 md:mt-12 text-sm hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C] rounded-[50px]'>
+                go to marketplace
+              </button>
+            </Link>
             <div>
               <img className='float-right' src='/images/nut.svg' alt='' />
             </div>
