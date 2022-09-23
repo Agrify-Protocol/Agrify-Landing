@@ -4,7 +4,7 @@ const InvestmentSection = () => {
   return (
     <div className='w-full  flex flex-col items-center pt-10 lg:pt-20 pb-10 bg-white rounded-[24px]'>
       <h1 className=' text-2xl text-center p-4 lg:text-[40px]'>
-        taking agricultural trade to the blockchain
+        taking agricultural trade to the blockchain test
       </h1>
       <p className='text-md md:text-[20px] py-4 text-center text-[#666] w-10/12 md:w-8/12 lg:w-1/3'>
         we’re building a new way to verify produce origin and supply on chain,
