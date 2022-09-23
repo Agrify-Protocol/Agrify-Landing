@@ -24,6 +24,7 @@ const LandingPage = () => {
             objectFit='cover'
             objectPosition='55% 10%'
             quality={100}
+            alt=""
           />
         </div>
       </div>
