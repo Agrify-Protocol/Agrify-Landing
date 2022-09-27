@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+import SupplierForm from "./seller-signup";
 
 const LandingPage = () => {
   const isBlack = true;
@@ -34,25 +35,8 @@ const LandingPage = () => {
           />
         </div>
       </div>
-
-      <div className='w-full  flex flex-col items-center py-20 bg-white rounded-[24px]'>
-        <h1 className=' text-[27px] leading-[30px] text-center p-4 lg:text-[40px] font-[Roses]'>
-          Be a part of the crypto economy
-        </h1>
-        <p className='text-md md:text-[20px] py-4 text-center text-[#666] w-10/12 md:w-8/12 xl:w-1/3'>
-          Gravida at lobortis nec, massa. Et convallis ut neque quis vitae
-          tincidunt augue risus. Volutpat id ullamcorper ut amet, ultricies
-          quis. Sagittis eros non lorem enim dictumst. Interdum lorem facilisis
-          integer arcu. Volutpat scelerisque egestas platea vitae. Vitae
-          vulputate eget scelerisque cursus habitant mi sit. Aliquet maecenas ac
-          posuere porta quis.
-        </p>
-        <Link href='/seller-signup'>
-          <button className=' p-3 lg:p-4 w-10/12 md:w-1/2 lg:w-1/5 m-6 font-light text-sm text-white hover:text-white bg-[#011308] hover:bg-[#0CC14C] rounded-[50px]'>
-            start verification
-          </button>
-        </Link>
-      </div>
+      <SupplierForm />
+      <div className='mb-10'></div>
       <Footer />
     </div>
   );
