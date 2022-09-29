@@ -1,9 +1,8 @@
 import { useState } from "react";
 
-async function UploadFile(e) {
+async function UploadFileV2(e) {
   // const [fileUrl, setFileUrl] = useState("");
   let fileUrl; //the file
-  let fileDataG;
   var file = e.target.files[0]; //the file
   var reader = new FileReader(); //this for convert to Base64
 
@@ -42,4 +41,4 @@ async function UploadFile(e) {
   //   } while (fileData !== null);
 }
 
-export default UploadFile;
+export default UploadFileV2;

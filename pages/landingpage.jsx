@@ -24,7 +24,7 @@ const LandingPage = () => {
             objectFit='cover'
             objectPosition='55% 10%'
             quality={100}
-            alt=""
+            alt=''
           />
         </div>
       </div>
@@ -39,7 +39,11 @@ const LandingPage = () => {
               produce suppliers, who are dedicated to safe and timely deliveries
               of produce across international borders
             </p>
-            <a href='https://marketplace.agrifyafrica.xyz/' target="_blank" rel="noreferrer">
+            <a
+              href='https://marketplace.agrifyafrica.xyz/'
+              target='_blank'
+              rel='noreferrer'
+            >
               <button className=' p-3 lg:p-4 border-black border-[1px] w-10/12 md:w-1/2 xl:w-1/3 my-6 md:mt-12 text-sm hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C] rounded-[50px]'>
                 go to marketplace
               </button>
@@ -50,12 +54,12 @@ const LandingPage = () => {
           </div>
           <div className='lg:w-1/2 p-10 bg-[#FFFAD7] rounded-[1rem]'>
             <h1 className='text-2xl py-4 md:text-[40px]'>join as a supplier</h1>
-            
+
             <p>
               join our community of suppliers, and boost your income by
               discovering new markets that need your organic produce.
             </p>
-            <Link href="suppliers">
+            <Link href='suppliers'>
               <button className=' p-3 lg:p-4 border-black border-[1px] w-10/12 md:w-1/2 xl:w-1/3 mt-12 text-sm hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C] rounded-[50px]'>
                 start verification
               </button>
@@ -72,10 +76,13 @@ const LandingPage = () => {
             we’re building a new way to verify produce origin and supply on
             chain, making global agricultural trade faster and more secure
           </p>
-
-          <button className=' p-3 lg:p-4 border-black border-[1px] w-10/12 md:w-1/2 lg:w-1/5 m-6 text-sm hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C] rounded-[50px]'>
-            see our investment deck
-          </button>
+          <Link href='/agrify-africa-pitch-deck.pdf'>
+            <a className='w-10/12 md:w-1/2 lg:w-1/5' href='_blank'>
+              <button className='p-3 lg:p-4 border-black border-[1px] w-full text-sm hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C] rounded-[50px]'>
+                see our investment deck
+              </button>
+            </a>
+          </Link>
 
           <div className='w-full flex items-end justify-between relative'>
             <Image width={300} height={300} src='/images/hand-left.svg' />

@@ -1,8 +1,8 @@
-import { google } from 'googleapis';
+import { google } from "googleapis";
 
 export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).send({ message: 'Only POST requests are allowed' });
+  if (req.method !== "POST") {
+    return res.status(405).send({ message: "Only POST requests are allowed" });
   }
 
   const body = req.body;
@@ -14,30 +14,30 @@ export default async function handler(req, res) {
         private_key: process.env.GOOGLE_PRIVATE_KEY,
       },
       scopes: [
-        'https://www.googleapis.com/auth/drive',
-        'https://www.googleapis.com/auth/drive.file',
-        'https://www.googleapis.com/auth/spreadsheets',
+        "https://www.googleapis.com/auth/drive",
+        "https://www.googleapis.com/auth/drive.file",
+        "https://www.googleapis.com/auth/spreadsheets",
       ],
     });
 
     const sheets = google.sheets({
       auth,
-      version: 'v4',
+      version: "v4",
     });
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
-      range: 'A1:G1',
-      valueInputOption: 'USER_ENTERED',
+      range: "A1:G1",
+      valueInputOption: "USER_ENTERED",
       requestBody: {
         values: [
           [
-            body.date,
+            body.currentDate,
             body.firstName,
             body.lastName,
             body.email,
             body.category,
             body.location,
-            body.file,
+            body.fileURL,
           ],
         ],
       },
@@ -48,6 +48,6 @@ export default async function handler(req, res) {
     });
   } catch (e) {
     console.error(e);
-    return res.status(500).send({ message: 'Something went wrong' });
+    return res.status(500).send({ message: "Something went wrong" });
   }
 }
