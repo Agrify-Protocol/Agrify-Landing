@@ -102,9 +102,9 @@ const SupplierForm = () => {
     e.preventDefault();
     handleDate();
     const isSuccesful = handleForm(e);
-    // if (isSuccesful) {
-    //   Router.push("/book-a-call");
-    // }
+    if (isSuccesful) {
+      Router.push("/book-a-call");
+    }
   };
 
   return (
