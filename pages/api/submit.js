@@ -48,6 +48,6 @@ export default async function handler(req, res) {
     });
   } catch (e) {
     console.error(e);
-    return res.status(500).send(res.json());
+    return res.status(500).json({ response: response });
   }
 }
