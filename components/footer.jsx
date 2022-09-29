@@ -28,10 +28,10 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <p className="py-2 hover:text-ag-green">marketplace</p>
+                <p className="py-2 hover:text-ag-green cursor-pointer">marketplace</p>
               </Link>
               <Link href="/suppliers">
-                <p className="py-2 hover:text-ag-green">supplier hub</p>
+                <p className="py-2 hover:text-ag-green cursor-pointer">supplier hub</p>
               </Link>
             </div>
             <div className="flex flex-col gap-2">
