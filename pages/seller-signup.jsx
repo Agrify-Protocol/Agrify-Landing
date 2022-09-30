@@ -114,8 +114,8 @@ const SupplierForm = () => {
           Please Fill out the required information
         </h1>
         <form
-          // method='POST'
-          // accept-charset='UTF-8'
+          method='POST'
+          accept-charset='UTF-8'
           onSubmit={handleSubmit}
           className=' flex flex-col gap-4 mt-4'
         >
