@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import Link from "next/link";
 
@@ -89,8 +90,8 @@ const LandingPage = () => {
           </a>
 
           <div className="w-full flex items-end justify-between relative">
-            <Image width={300} height={300} src="/images/hand-left.svg" />
-            <Image width={300} height={300} src="/images/hand-right.svg" />
+            <Image width={300} height={300} alt="" src="/images/hand-left.svg" />
+            <Image width={300} height={300} alt="" src="/images/hand-right.svg" />
           </div>
         </div>
       </div>
