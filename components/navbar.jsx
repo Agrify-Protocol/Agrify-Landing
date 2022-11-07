@@ -22,10 +22,21 @@ const Navbar = ({ isBlack }) => {
       setStickyInview(window.scrollY >= 500);
     };
 
+
     window.addEventListener("scroll", handleScroll);
     // Remove the listener when cleaning up
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (moreToggle) {
+      console.log("fjjjjjjjjjj")
+      document.body.style.overflowY = "hidden"
+    }else {
+      document.body.style.overflowY = "unset"
+    }
+
+  }, [moreToggle]);
 
   const isSticky = () => {
     var classes =
