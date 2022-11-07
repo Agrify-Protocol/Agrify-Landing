@@ -13,7 +13,7 @@ const LandingPage = () => {
     <div className="bg-gray-100">
       <div className="block">
         <div className="absolute top-[120px] lg:top-[180px] w-full flex flex-col items-center align-center justify-center z-50">
-          <h1 className=" text-[30px] md:text-[40px] leading-[32px] md:leading-[52px] w-full md:w-7/12 lg:text-[60px] text-white text-center" data-aos="fade-up"  data-aos-duration="1900">
+          <h1 className=" text-[30px] md:text-[40px] leading-[32px] md:leading-[52px] w-full md:w-7/12 lg:text-[60px] text-white text-center" data-aos="fade-down"  data-aos-duration="1900">
             welcome to the future of agriculture
           </h1>
           <Link href="#explore">
