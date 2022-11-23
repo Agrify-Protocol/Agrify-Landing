@@ -10,104 +10,334 @@ const LandingPage = () => {
     AOS.refresh();
   }, []);
   return (
-    <div className="bg-gray-100">
-      <div className="block">
-        <div className="absolute top-[120px] lg:top-[180px] w-full flex flex-col items-center align-center justify-center z-50">
-          <h1 className=" text-[30px] md:text-[40px] leading-[32px] md:leading-[52px] w-full md:w-7/12 lg:text-[60px] text-white text-center" data-aos="fade-down"  data-aos-duration="2500">
-            welcome to the future of agriculture
-          </h1>
-          <Link href="#explore">
-            <button className=" p-3 px-12 lg:px-14 mt-6 lg:mt-12 text-[#0ABA43] hover:text-white bg-white hover:bg-black rounded-[50px]">
-              explore
-            </button>
-          </Link>
+    // <div className="bg-gray-100">
+    //   <div className="block">
+    //     <div className="absolute top-[120px] lg:top-[180px] w-full flex flex-col items-center align-center justify-center z-50">
+    //       <h1 className=" text-[30px] md:text-[40px] leading-[32px] md:leading-[52px] w-full md:w-7/12 lg:text-[60px] text-white text-center" data-aos="fade-down"  data-aos-duration="2500">
+    //         welcome to the future of agriculture
+    //       </h1>
+    //       <Link href="#explore">
+    //         <button className=" p-3 px-12 lg:px-14 mt-6 lg:mt-12 text-[#0ABA43] hover:text-white bg-white hover:bg-black rounded-[50px]">
+    //           explore
+    //         </button>
+    //       </Link>
+    //     </div>
+
+    //     <div className="block h-screen">
+    //       <Image
+    //         src="/images/backdrop.svg"
+    //         className="block"
+    //         layout="fill"
+    //         objectFit="cover"
+    //         objectPosition="55% 10%"
+    //         quality={100}
+    //         alt=""
+    //       />
+    //     </div>
+    //   </div>
+    //   <div id="explore" className="p-10 lg:p-14">
+    //     <div className="flex flex-col lg:flex-row justify-between gap-10" data-aos="zoom-in-up" data-aos-duration="2500" data-aos-easing="ease-in-out">
+    //       <div className="lg:w-1/2 p-10 bg-[#F3FDD7] rounded-[1rem]">
+    //         <h1 className="text-2xl py-4 md:text-[40px]">
+    //           shop organic produce
+    //         </h1>
+    //         <p>
+    //           we’ve curated a community of small and large quantity organic
+    //           produce suppliers, who are dedicated to safe and timely deliveries
+    //           of produce across international borders
+    //         </p>
+    //         <a
+    //           href="https://marketplace.agrifyafrica.xyz/"
+    //           target="_blank"
+    //           rel="noreferrer"
+    //         >
+    //           <button className=" p-3 lg:p-4 border-black border-[1px] w-10/12 md:w-1/2 xl:w-1/3 my-6 md:mt-12 text-sm hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C] rounded-[50px]">
+    //             go to marketplace
+    //           </button>
+    //         </a>
+    //         <div>
+    //           <img className="float-right" src="/images/nut.svg" alt="" />
+    //         </div>
+    //       </div>
+    //       <div className="lg:w-1/2 p-10 bg-[#FFFAD7] rounded-[1rem]">
+    //         <h1 className="text-2xl py-4 md:text-[40px]">join as a supplier</h1>
+
+    //         <p>
+    //           join our community of suppliers, and boost your income by
+    //           discovering new markets that need your organic produce.
+    //         </p>
+    //         <Link href="suppliers">
+    //           <button className=" p-3 lg:p-4 border-black border-[1px] w-10/12 md:w-1/2 xl:w-1/3 mt-12 text-sm hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C] rounded-[50px]">
+    //             start verification
+    //           </button>
+    //         </Link>
+    //         <img className="float-right" src="/images/man.svg" alt="" />
+    //       </div>
+    //     </div>
+
+    //     <div className="w-full  flex flex-col my-10 items-center pt-10 lg:pt-20 pb-10 bg-white rounded-[24px]">
+    //       <h1 className=" text-2xl text-center p-4 lg:text-[40px]" data-aos="fade-down"  data-aos-duration="2500">
+    //         taking agricultural trade to the blockchain
+    //       </h1>
+    //       <p className="text-md md:text-[20px] py-4 text-center text-[#666] w-10/12 md:w-8/12 xl:w-1/3">
+    //         we’re building a new way to verify produce origin and supply on
+    //         chain, making global agricultural trade faster and more secure
+    //       </p>
+
+    //       <a
+    //         className="w-10/12 md:w-1/2 lg:w-1/5"
+    //         href="https://docsend.com/view/mxgfy98iqj7j74em"
+    //         target="_blank"
+    //         rel="noreferrer"
+    //       >
+    //         <button className="p-3 lg:p-4 border-black border-[1px] w-full text-sm hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C] rounded-[50px]">
+    //           see our investment deck
+    //         </button>
+    //       </a>
+
+    //       <div className="w-full flex items-end justify-between relative" data-aos="fade-up"  data-aos-duration="2500">
+    //         <Image
+    //           width={300}
+    //           height={300}
+    //           alt=""
+    //           src="/images/hand-left.svg"
+    //         />
+    //         <Image
+    //           width={300}
+    //           height={300}
+    //           alt=""
+    //           src="/images/hand-right.svg"
+    //         />
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+    <div className="bg-gray-100 mt-[9rem] h-full">
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="font-medium text-[4rem] leading-[4.5rem] ">
+          Invest in the Future of
+        </h1>
+        <div className="font-['Signifier'] font-medium text-[4rem] leading-[4.5rem]">
+          Agriculture
         </div>
 
-        <div className="block h-screen">
+        <div className="mt-[2.5rem] text-centerw-[43.813rem] ">
+          <p className="text-[1.125rem] leading-[1.688rem] text-[#302F2D] ">
+            Discover & invest in top-tier innovative agribusinesses, digital
+            products,{" "}
+          </p>
+          <p className="text-[1.125rem] leading-[1.688rem] text-[#302F2D]  px-[10rem]">
+            farming techniques and hardware.
+          </p>
+        </div>
+
+        <button className="w-[12.25rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#0CC14C] mt-[3rem]">
+          <p className="text-white leading-6 font-medium ">Join Waitlist</p>
+        </button>
+      </div>
+      <div className="mt-[5rem]">
+        <Image
+          priority
+          src="/images/hero-illustration.svg"
+          className=""
+          height={1117}
+          width={1600}
+          alt="hero illustration"
+        />
+      </div>
+
+      <div className="mt-[10.188rem] flex flex-col items-center justify-center">
+        <h1 className="font-medium text-[3.75rem] leading-[3.5rem] ">
+          Agriculture investing made{" "}
+          <span className="font-['Signifier'] text-[3.75rem]">simple</span>
+        </h1>
+
+        <div className="mt-[1.5rem] text-xl leading-[1.688rem] text-[#302F2D] w-[54.875rem] text-center">
+          <div>
+            <p>
+              As global food demand and use of sophisticated technology in
+              agriculture continues to rise, Agrify is here to give you access
+              to the unprecedented growth opportunity in the agriculture
+            </p>
+            <p>sector, so you too can get in on the action.</p>
+          </div>
+          <div className="mt-[1.5rem]">
+            <p>
+              Using distributed ledger technology, we have created a new way for
+              agricultural innovators to gain access to funding from backers all
+              over the world, doing away with the politics of funding
+            </p>
+            <p>and making it more straight forward and merit based.</p>
+          </div>
+        </div>
+
+        <h1 className="font-medium text-[2.313rem] leading-[2.813rem] text-[#595C63] mt-[3rem]">
+          Diversify your portfolio and earn more from{" "}
+          <span className="text-[#0CC14C]">new markets</span>
+        </h1>
+      </div>
+
+      <div className="mt-[10rem] bg-white shadow-sm rounded-[32px] mx-[4rem]  flex items-center justify-between">
+        <div className="pl-[4.5rem] mb-[5rem]">
+          <h1 className="leading-[3rem] text-[2.5rem] text-[#000000] ">
+            Own a stake in the global
+          </h1>
+          <h1 className="leading-[3rem] text-[2.5rem] text-[#000000] ">
+            {" "}
+            agricultural innovation
+          </h1>
+          <div className="flex  items-center gap-2 mt-[3rem]">
+            <p>Learn More</p>
+            <Image
+              priority
+              src="/images/learn-more-black.svg"
+              className=""
+              height={14.68}
+              width={18}
+              alt="learn more"
+            />
+          </div>
+        </div>
+
+        <div>
           <Image
-            src="/images/backdrop.svg"
-            className="block"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="55% 10%"
-            quality={100}
-            alt=""
+            priority
+            src="/images/browser-img.svg"
+            className=""
+            height={467.19}
+            width={598}
+            alt="agrify"
           />
         </div>
       </div>
-      <div id="explore" className="p-10 lg:p-14">
-        <div className="flex flex-col lg:flex-row justify-between gap-10" data-aos="zoom-in-up" data-aos-duration="2500" data-aos-easing="ease-in-out">
-          <div className="lg:w-1/2 p-10 bg-[#F3FDD7] rounded-[1rem]">
-            <h1 className="text-2xl py-4 md:text-[40px]">
-              shop organic produce
-            </h1>
-            <p>
-              we’ve curated a community of small and large quantity organic
-              produce suppliers, who are dedicated to safe and timely deliveries
-              of produce across international borders
-            </p>
-            <a
-              href="https://marketplace.agrifyafrica.xyz/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button className=" p-3 lg:p-4 border-black border-[1px] w-10/12 md:w-1/2 xl:w-1/3 my-6 md:mt-12 text-sm hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C] rounded-[50px]">
-                go to marketplace
-              </button>
-            </a>
-            <div>
-              <img className="float-right" src="/images/nut.svg" alt="" />
-            </div>
-          </div>
-          <div className="lg:w-1/2 p-10 bg-[#FFFAD7] rounded-[1rem]">
-            <h1 className="text-2xl py-4 md:text-[40px]">join as a supplier</h1>
 
-            <p>
-              join our community of suppliers, and boost your income by
-              discovering new markets that need your organic produce.
-            </p>
-            <Link href="suppliers">
-              <button className=" p-3 lg:p-4 border-black border-[1px] w-10/12 md:w-1/2 xl:w-1/3 mt-12 text-sm hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C] rounded-[50px]">
-                start verification
-              </button>
-            </Link>
-            <img className="float-right" src="/images/man.svg" alt="" />
+      <div className="mt-[9rem] mx-[4rem] flex items-center justify-between">
+        <div className="bg-[#C1E701] rounded-[32px] shadow-sm p-[2.375rem] w-[580px]">
+          <h1 className="font-medium text-[2.5rem] leading-[3rem] text-[#000] w-[23.375rem]">
+            Apply for the next Cohort
+          </h1>
+          <div className="flex justify-center py-[3rem]">
+            <Image
+              priority
+              src="/images/farmer.svg"
+              className=""
+              height={427.74}
+              width={295}
+              alt="apply for next cohort"
+            />
+          </div>
+
+          <p className="text-[#000] text-[1.125rem] leading-[1.488rem] w-[32.813rem] ">
+            Are you creating the next big thing that can take the giant Africa
+            out of its negative balance of payment, enhance food security and
+            even export to other countries?{" "}
+          </p>
+
+          <div className="flex  items-center gap-2 mt-[3rem]">
+            <p>Learn More</p>
+            <Image
+              priority
+              src="/images/learn-more-black.svg"
+              className=""
+              height={14.68}
+              width={18}
+              alt="learn more"
+            />
           </div>
         </div>
 
-        <div className="w-full  flex flex-col my-10 items-center pt-10 lg:pt-20 pb-10 bg-white rounded-[24px]">
-          <h1 className=" text-2xl text-center p-4 lg:text-[40px]" data-aos="fade-down"  data-aos-duration="2500">
-            taking agricultural trade to the blockchain
+        <div className="bg-[#8B4DED] rounded-[32px] shadow-sm p-[2.375rem] w-[580px] text-white">
+          <h1 className="font-medium text-[2.5rem] leading-[3rem]  w-[23.375rem]">
+            Learn, Earn, and Grow
           </h1>
-          <p className="text-md md:text-[20px] py-4 text-center text-[#666] w-10/12 md:w-8/12 xl:w-1/3">
-            we’re building a new way to verify produce origin and supply on
-            chain, making global agricultural trade faster and more secure
+          <div className="flex justify-center py-[3rem]">
+            <Image
+              priority
+              src="/images/grow.svg"
+              className=""
+              height={427.74}
+              width={295}
+              alt="learn earn grow "
+            />
+          </div>
+
+          <p className=" text-[1.125rem] leading-[1.488rem] w-[32.813rem] ">
+            The Agrify community is opening rails for anyone to easily jump into
+            the budding and dynamic blockchain space.
           </p>
 
-          <a
-            className="w-10/12 md:w-1/2 lg:w-1/5"
-            href="https://docsend.com/view/mxgfy98iqj7j74em"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="p-3 lg:p-4 border-black border-[1px] w-full text-sm hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C] rounded-[50px]">
-              see our investment deck
-            </button>
-          </a>
+          <div className="flex  items-center gap-2 mt-[3rem]">
+            <p>Learn More</p>
+            <Image
+              priority
+              src="/images/learn-more-white.svg"
+              className=""
+              height={14.68}
+              width={18}
+              alt="learn more"
+            />
+          </div>
+        </div>
+      </div>
 
-          <div className="w-full flex items-end justify-between relative" data-aos="fade-up"  data-aos-duration="2500">
-            <Image
-              width={300}
-              height={300}
-              alt=""
-              src="/images/hand-left.svg"
-            />
-            <Image
-              width={300}
-              height={300}
-              alt=""
-              src="/images/hand-right.svg"
-            />
+      <div className="mt-[10rem] flex flex-col items-center">
+        <h1 className="font-semibold text-5xl leading-[3.5rem] w-[53.25rem] text-center">
+          Democratizing Agriculture through Blockchain Technology
+        </h1>
+        <p className="text-xl text-[#302F2D] mt-[1.5rem]">
+          Join our waitlist to get early access
+        </p>
+
+        <button className="w-[13.813rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#011308] mt-[2rem]">
+          <p className="text-white leading-6 font-medium ">Join Waitlist</p>
+        </button>
+      </div>
+
+      <div className="mt-[10rem] flex flex-col items-center">
+        <h1 className="font-semibold text-[2.5rem] leading-[3rem]  text-center">
+          FAQs
+        </h1>
+        <div className="border  w-[59.625rem]">
+          <div className="flex justify-between items-center border-b-1 border-[#A1A7AB] pb-[1rem]">
+            <p className="font-medium text-2xl">What is Agrify?</p>
+            <div>
+              <Image
+                priority
+                src="/images/faqs.svg"
+                className=""
+                height={19.93}
+                width={19.92}
+                alt="FAQs"
+              />
+            </div>
+          </div>
+
+          <div className="flex justify-between items-center border-b-1 border-[#A1A7AB] pb-[1rem]">
+            <p className="font-medium text-2xl">How does it work</p>
+            <div>
+              <Image
+                priority
+                src="/images/faqs.svg"
+                className=""
+                height={19.93}
+                width={19.92}
+                alt="FAQs"
+              />
+            </div>
+          </div>
+
+          <div className="flex justify-between items-center border-b-1 border-[#A1A7AB] pb-[1rem]">
+            <p className="font-medium text-2xl">Is it safe to Invest?</p>
+            <div>
+              <Image
+                priority
+                src="/images/faqs.svg"
+                className=""
+                height={19.93}
+                width={19.92}
+                alt="FAQs"
+              />
+            </div>
           </div>
         </div>
       </div>
