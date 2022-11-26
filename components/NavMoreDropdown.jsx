@@ -37,15 +37,15 @@ const NavMoreDropdown = ({ moreToggle, setMoreToggle }) => {
               rel="noreferrer"
             >
               <h1 className=" cursor-pointer w-fit text-[40px] py-1 hover:text-ag-green ">
-                invest
+                Invest
               </h1>
             </a>
-            <Link href="/suppliers">
+            <Link href="/cohort">
               <h1 className="cursor-pointer w-fit text-[40px] py-1 hover:text-ag-green ">
-                cohort
+                Cohort
               </h1>
             </Link>
-            <h1 className="text-[40px] w-fit text-slate-300 py-1">learn</h1>
+            <h1 className="text-[40px] w-fit text-slate-300 py-1">Learn</h1>
           </div>
           <div className="flex gap-4 mt-12 text-[#666666]">
             <a

@@ -131,9 +131,11 @@ const LandingPage = () => {
           </p>
         </div>
 
-        <button className="w-[12.25rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#0CC14C] mt-[3rem]">
-          <p className="text-white leading-6 font-medium ">Join Waitlist</p>
-        </button>
+        <Link href="/waitlist">
+          <button className="w-[12.25rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#0CC14C] mt-[3rem]">
+            <p className="text-white leading-6 font-medium ">Join Waitlist</p>
+          </button>
+        </Link>
       </div>
       <div className="mt-[5rem]">
         <Image
@@ -212,72 +214,72 @@ const LandingPage = () => {
       </div>
 
       <div className="mt-[9rem] mx-[4rem] flex items-center justify-between">
-        <div className="bg-[#C1E701] rounded-[32px] shadow-sm p-[2.375rem] w-[580px]">
-          <h1 className="font-medium text-[2.5rem] leading-[3rem] text-[#000] w-[23.375rem]">
-            Apply for the next Cohort
-          </h1>
-          <div className="flex justify-center py-[3rem]">
-            <Image
-              priority
-              src="/images/farmer.svg"
-              className=""
-              height={427.74}
-              width={295}
-              alt="apply for next cohort"
-            />
+        <Link href="/cohort">
+          <div className="bg-[#C1E701] rounded-[32px] shadow-sm p-[2.375rem] w-[580px] cursor-pointer">
+            <h1 className="font-medium text-[2.5rem] leading-[3rem] text-[#000] w-[23.375rem] ">
+              Apply for the next Cohort
+            </h1>
+            <div className="flex justify-center py-[3rem]">
+              <Image
+                priority
+                src="/images/farmer.svg"
+                className=""
+                height={427.74}
+                width={295}
+                alt="apply for next cohort"
+              />
+            </div>
+            <p className="text-[#000] text-[1.125rem] leading-[1.488rem] w-[32.813rem] ">
+              Are you creating the next big thing that can take the giant Africa
+              out of its negative balance of payment, enhance food security and
+              even export to other countries?{" "}
+            </p>
+            <div className="flex  items-center gap-2 mt-[3rem]">
+              <p>Learn More</p>
+              <Image
+                priority
+                src="/images/learn-more-black.svg"
+                className=""
+                height={14.68}
+                width={18}
+                alt="learn more"
+              />
+            </div>
           </div>
+        </Link>
 
-          <p className="text-[#000] text-[1.125rem] leading-[1.488rem] w-[32.813rem] ">
-            Are you creating the next big thing that can take the giant Africa
-            out of its negative balance of payment, enhance food security and
-            even export to other countries?{" "}
-          </p>
-
-          <div className="flex  items-center gap-2 mt-[3rem]">
-            <p>Learn More</p>
-            <Image
-              priority
-              src="/images/learn-more-black.svg"
-              className=""
-              height={14.68}
-              width={18}
-              alt="learn more"
-            />
+        <Link href="/">
+          <div className="bg-[#8B4DED] rounded-[32px] shadow-sm p-[2.375rem] w-[580px] text-white cursor-pointer">
+            <h1 className="font-medium text-[2.5rem] leading-[3rem]  w-[23.375rem]">
+              Learn, Earn, and Grow
+            </h1>
+            <div className="flex justify-center py-[3rem]">
+              <Image
+                priority
+                src="/images/grow.svg"
+                className=""
+                height={427.74}
+                width={295}
+                alt="learn earn grow "
+              />
+            </div>
+            <p className=" text-[1.125rem] leading-[1.488rem] w-[32.813rem] ">
+              The Agrify community is opening rails for anyone to easily jump into
+              the budding and dynamic blockchain space.
+            </p>
+            <div className="flex  items-center gap-2 mt-[3rem]">
+              <p>Learn More</p>
+              <Image
+                priority
+                src="/images/learn-more-white.svg"
+                className=""
+                height={14.68}
+                width={18}
+                alt="learn more"
+              />
+            </div>
           </div>
-        </div>
-
-        <div className="bg-[#8B4DED] rounded-[32px] shadow-sm p-[2.375rem] w-[580px] text-white">
-          <h1 className="font-medium text-[2.5rem] leading-[3rem]  w-[23.375rem]">
-            Learn, Earn, and Grow
-          </h1>
-          <div className="flex justify-center py-[3rem]">
-            <Image
-              priority
-              src="/images/grow.svg"
-              className=""
-              height={427.74}
-              width={295}
-              alt="learn earn grow "
-            />
-          </div>
-
-          <p className=" text-[1.125rem] leading-[1.488rem] w-[32.813rem] ">
-            The Agrify community is opening rails for anyone to easily jump into
-            the budding and dynamic blockchain space.
-          </p>
-
-          <div className="flex  items-center gap-2 mt-[3rem]">
-            <p>Learn More</p>
-            <Image
-              priority
-              src="/images/learn-more-white.svg"
-              className=""
-              height={14.68}
-              width={18}
-              alt="learn more"
-            />
-          </div>
-        </div>
+        </Link>
       </div>
 
       <div className="mt-[10rem] flex flex-col items-center">
@@ -288,9 +290,11 @@ const LandingPage = () => {
           Join our waitlist to get early access
         </p>
 
-        <button className="w-[13.813rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#011308] mt-[2rem]">
-          <p className="text-white leading-6 font-medium ">Join Waitlist</p>
-        </button>
+        <Link href="/waitlist">
+          <button className="w-[13.813rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#011308] mt-[2rem] hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C]">
+            <p className="text-white leading-6 font-medium  ">Join Waitlist</p>
+          </button>
+        </Link>
       </div>
 
       <div className="mt-[10rem] flex flex-col items-center">

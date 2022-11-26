@@ -1,11 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+import CohortForm from "./cohort-application";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
-const BookACall = () => {
+const Cohort = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div className="">
-      <Navbar isBlack={true} />
+      <Navbar isBlack={true} className="bg-[#E1EBDC]" />
       <div className=" bg-[#E1EBDC] h-[800px] flex flex-col lg:flex-row justify-between p-10 md:p-20 pt-[150px] ">
         <div
           className="top-[120px] lg:top-[180px] w-full lg:w-[520px] flex flex-col items-center lg:items-start justify-center z-50"
@@ -40,25 +49,8 @@ const BookACall = () => {
           />
         </div>
       </div>
-      <div className="mt-[5rem] bg-gray-100 flex flex-col justify-center items-center gap-[1.5rem]">
-        <h1 className=" font-medium text-2xl leading-[32px] text-center">
-          next step ; book a call
-        </h1>
-        <p className="text-[#666666] font-normal text-xl leading-6 text-center w-[40.375rem]">
-          you information has been received succesfully, the next step is to
-          book a call with our representative to properly onboard you to our
-          platform
-        </p>
-
-        <Link href='https://calendly.com/agrifyafrica/agrify-supplier-onboarding'>
-            <a target='_blank'>
-              <button className='bg-ag-green h-[3rem] rounded-[3rem] text-white mt-9 w-[11.5rem]'>
-                book a call
-              </button>
-            </a>
-          </Link>
-      </div>
-
+      <CohortForm />
+      {/* <div className="mb-10"></div> */}
       <div className={`flex flex-col md:flex-row xl:justify-between items-start xl:items-center mt-[17.938rem] px-[3rem] pb-[5.563rem]  bg-white pt-[5.563rem] `}>
       <div className="mr-[5rem] flex flex-col xl:flex-row gap-3 items-start xl:items-center">
         <Image
@@ -80,8 +72,9 @@ const BookACall = () => {
         <a className="font normal text-lg leading-6 text-[#666666] hover:text-ag-green cursor-pointer">Contact</a>
       </div>
     </div>
+      
     </div>
   );
 };
 
-export default BookACall;
+export default Cohort;
