@@ -22,20 +22,23 @@ const Footer = () => {
           </div>
           <div className="flex flex-col md:flex-row gap-[2rem] w-fit justify-between">
             <div>
-              <h4 className="font-semibold py-2">Product</h4>
+              <h4 className="font-semibold py-2 text-[#0CC14C]">Product</h4>
               <Link
                 href="https://marketplace.agrifyafrica.xyz/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <p className="py-2 hover:text-ag-green cursor-pointer">marketplace</p>
+                <p className="py-2 hover:text-ag-green cursor-pointer">Invest</p>
               </Link>
               <Link href="/suppliers">
-                <p className="py-2 hover:text-ag-green cursor-pointer">supplier hub</p>
+                <p className="py-2 hover:text-ag-green cursor-pointer">Cohort</p>
+              </Link>
+              <Link href="/suppliers">
+                <p className="py-2 hover:text-ag-green cursor-pointer">Learn</p>
               </Link>
             </div>
             <div className="flex flex-col gap-2">
-              <h4 className="font-semibold py-2">Connect</h4>
+              <h4 className="font-semibold py-2 text-[#0CC14C]">Connect</h4>
               <a 
                 href="https://t.me/+LzukavSm-9MxY2Y8"
                 target="_blank"
@@ -75,7 +78,7 @@ const Footer = () => {
           <Image width={200} height={100} src="/images/logo.svg" alt="logo"/>
         </div>
       </div>
-      <div className="block h-fit w-full">
+      <div className="block h-fit w-full bg-white">
         <img src="/images/roots.svg" className="w-full" />
       </div>
     </>

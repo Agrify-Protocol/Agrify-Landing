@@ -22,7 +22,6 @@ const Navbar = ({ isBlack }) => {
       setStickyInview(window.scrollY >= 500);
     };
 
-
     window.addEventListener("scroll", handleScroll);
     // Remove the listener when cleaning up
     return () => window.removeEventListener("scroll", handleScroll);
@@ -30,12 +29,11 @@ const Navbar = ({ isBlack }) => {
 
   useEffect(() => {
     if (moreToggle) {
-      console.log("fjjjjjjjjjj")
-      document.body.style.overflowY = "hidden"
-    }else {
-      document.body.style.overflowY = "unset"
+      
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "unset";
     }
-
   }, [moreToggle]);
 
   const isSticky = () => {
@@ -61,46 +59,61 @@ const Navbar = ({ isBlack }) => {
 
   return (
     <>
-      <nav className={isSticky()}>
-        <Link href='/'>
-          <a>
-            <img
-              className={"w-[8.5rem]" + (sticky ? " hidden" : " ")}
-              alt='logo'
-              src={
-                isBlack ? "/images/logo-black.svg" : "/images/logo-white.svg"
-              }
-            />
-            <img
-              className={"w-[6.5rem]" + (sticky ? " " : " hidden")}
-              alt='logo'
-              src='/images/logo.svg'
-            />
-          </a>
-        </Link>
-
-        <div className='flex items-center'>
-          {/* <Link href='https://agrify-africa.netlify.app/'>
-            <a>
-              <button
-                className={
-                  "px-8 py-2 mx-10 rounded-[3rem] text-white text-sm bg-black" +
-                  (sticky ? " " : " hidden")
+      <div className="flex justify-between items-center border">
+        <nav className={isSticky()} style={{ backgroundColor: "#f5f5f5" }}>
+          <Link href="/">
+            {/* <a>
+              <img
+                className={"w-[8.5rem]" + (sticky ? " hidden" : " ")}
+                alt='logo'
+                src={
+                  isBlack ? "/images/logo-black.svg" : "/images/logo-white.svg"
                 }
-              >
-                explore
+              />
+              <img
+                className={"w-[6.5rem]" + (sticky ? " " : " hidden")}
+                alt='logo'
+                src='/images/logo.svg'
+              />
+            </a> */}
+            <Image
+              priority
+              src="/images/logo-nav.svg"
+              className=""
+              height={48}
+              width={123.26}
+              alt="logo"
+            />
+          </Link>
+          <div className="flex items-center justify-center gap-4">
+            <Link href="waitlist">
+              <button className="hidden md:block w-[11.688rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#0CC14C]">
+                <p className="text-white leading-6 font-medium ">Join Waitlist</p>
               </button>
-            </a>
-          </Link> */}
-
-          <div
-            onClick={() => setMoreToggle(!moreToggle)}
-            className='lg:block cursor-pointer'
-          >
-            <BsThreeDots className='text-black' size={32} />
+            </Link>
+            <div className="flex items-center">
+              {/* <Link href='https://agrify-africa.netlify.app/'>
+                <a>
+                  <button
+                    className={
+                      "px-8 py-2 mx-10 rounded-[3rem] text-white text-sm bg-black" +
+                      (sticky ? " " : " hidden")
+                    }
+                  >
+                    explore
+                  </button>
+                </a>
+              </Link> */}
+              <div
+                onClick={() => setMoreToggle(!moreToggle)}
+                className="lg:block cursor-pointer"
+              >
+                <BsThreeDots className="text-black" size={32} />
+              </div>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <NavMoreDropdown moreToggle={moreToggle} setMoreToggle={setMoreToggle} />
     </>
   );
