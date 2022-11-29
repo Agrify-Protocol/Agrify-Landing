@@ -6,13 +6,13 @@ const Modal = ({ show, onClose }) => {
   // if (!props.show) {
   //   return null;
   // }
-  useEffect(() => {
-    if (show) {
-      document.body.style.overflowY = 'hidden';
-    } else {
-      document.body.style.overflowY = 'unset';
-    }
-  }, [show]);
+  // useEffect(() => {
+  //   if (show) {
+  //     document.body.style.overflowY = 'hidden';
+  //   } else {
+  //     document.body.style.overflowY = 'unset';
+  //   }
+  // }, [show]);
 
   return (
     //  Main modal
@@ -33,12 +33,12 @@ const Modal = ({ show, onClose }) => {
           onClick={(e) => e.stopPropagation()}
         >
           <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
-            <div class="modal-body relative p-4 flex justify-between items-center py-[4.5rem] px-[4rem]">
+            <div class="modal-body relative p-4 flex justify-between items-center py-[4.5rem] px-[4rem] flex-wrap">
               <div className="flex flex-col gap-[1.5rem]">
-                <h1 className="font-medium text-[2.5rem] leading-[3rem]  w-[23.375rem]">
+                <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem]   w-[23.375rem]">
                   Learn, Earn, and Grow
                 </h1>
-                <p className=" text-[1.25rem] leading-[1.688rem] w-[28.563rem] ">
+                <p className=" text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem]  ">
                   The Agrify community is opening rails for anyone to eas jump
                   into the budding and dynamic blockchain space.
                 </p>
@@ -46,7 +46,7 @@ const Modal = ({ show, onClose }) => {
                   Coming Soon
                 </p>
               </div>
-              <div>
+              <div className='shrink-0'>
                 <Image
                   priority
                   src="/images/why-crypto.svg"

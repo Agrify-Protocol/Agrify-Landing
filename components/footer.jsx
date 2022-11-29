@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <div className="w-full items-start p-10 lg:p-20  bg-white mt-14">
         <div className="w-full flex flex-col lg:flex-row justify-between items-start">
-          <div className="flex flex-col">
+          {/* <div className=" hidden md:flex flex-col">
             <p className="text-md md:text-[28px] font-light lg:w-[500px] py-4 text-left text-[#666]">
               join our telegram community to learn more about agrify
             </p>
@@ -19,7 +19,7 @@ const Footer = () => {
                 join us on telegram
               </button>
             </a>
-          </div>
+          </div> */}
           <div className="flex flex-col md:flex-row gap-[2rem] w-fit justify-between">
             <div>
               <h4 className="font-semibold py-2 text-[#0CC14C]">Product</h4>

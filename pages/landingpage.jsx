@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import { useEffect, useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import Modal from '../components/Modal';
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Modal from "../components/Modal";
 const LandingPage = () => {
   const [show, setShow] = useState(false);
   useEffect(() => {
@@ -17,8 +17,11 @@ const LandingPage = () => {
     //   <div className="block">
     //     <div className="absolute top-[120px] lg:top-[180px] w-full flex flex-col items-center align-center justify-center z-50">
     //       <h1 className=" text-[30px] md:text-[40px] leading-[32px] md:leading-[52px] w-full md:w-7/12 lg:text-[60px] text-white text-center" data-aos="fade-down"  data-aos-duration="2500">
-    //         welcome to the future of agriculture
+    //       Invest in the Future of
     //       </h1>
+    //       <div className="font-['Signifier'] font-medium text-[4rem] leading-[4.5rem]">
+    //       Agriculture
+    //      </div>
     //       <Link href="#explore">
     //         <button className=" p-3 px-12 lg:px-14 mt-6 lg:mt-12 text-[#0ABA43] hover:text-white bg-white hover:bg-black rounded-[50px]">
     //           explore
@@ -115,22 +118,19 @@ const LandingPage = () => {
     //     </div>
     //   </div>
     // </div>
-    <div className="bg-gray-100 mt-[9rem] h-full">
+    <div className="bg-gray-100 mt-[9rem] h-full my-0 mx-auto border border-red-200">
       <div className="flex flex-col items-center justify-center">
         <h1 className="font-medium text-[2rem] md:text-[4rem] leading-[2.5rem] md:leading-[4.5rem] text-center ">
           Invest in the Future of
         </h1>
-        <div className="font-['Signifier'] font-medium text-[4rem] leading-[4.5rem]">
+        <div className="font-['Signifier'] font-medium text-[2rem] md:text-[4rem] leading-[2.5rem] md:leading-[4.5rem] text-center">
           Agriculture
         </div>
 
         <div className="mt-[2.5rem] text-center w-[43.813rem] ">
-          <p className="text-base md:text-[1.125rem] leading-[1.25rem] md:leading-[1.688rem] text-[#302F2D] text-center">
+          <p className="text-base md:text-[1.25rem] leading-[1.25rem] md:leading-[1.688rem] text-[#302F2D] font-normal max-w-[22.375rem] my-0 mx-auto">
             Discover & invest in top-tier innovative agribusinesses, digital
-            products,{' '}
-          </p>
-          <p className="text-base md:text-[1.125rem] leading-[1.25rem] md:leading-[1.688rem] text-[#302F2D]  px-[10rem] text-center">
-            farming techniques and hardware.
+            products,farming techniques and hardware.
           </p>
         </div>
 
@@ -151,13 +151,15 @@ const LandingPage = () => {
         />
       </div>
 
-      <div className="mt-[10.188rem] flex flex-col items-center justify-center">
-        <h1 className="font-medium text-[3.75rem] leading-[3.5rem] ">
-          Agriculture investing made{' '}
-          <span className="font-['Signifier'] text-[3.75rem]">simple</span>
+      <div className="mt-[10.188rem] flex flex-col items-center justify-center pl-[1.125rem] md:pl-0">
+        <h1 className="font-medium text-[2.313rem] md:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem]  ">
+          Agriculture investing made{" "}
+          <span className="font-['Signifier'] text-[2.313rem] md:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem]">
+            simple
+          </span>
         </h1>
 
-        <div className="mt-[1.5rem] text-xl leading-[1.688rem] text-[#302F2D] w-[54.875rem] text-center">
+        <div className="mt-[1.5rem] text-base md:text-xl leading-5 md:leading-[1.688rem] text-[#302F2D] w-[22.25rem] md:w-[54.875rem]">
           <div>
             <p>
               As global food demand and use of sophisticated technology in
@@ -176,23 +178,22 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <h1 className="font-medium text-[2.313rem] leading-[2.813rem] text-[#595C63] mt-[3rem]">
-          Diversify your portfolio and earn more from{' '}
+        <h1 className="font-medium text-2xl md:text-[2.313rem] leading-8 md:leading-[2.813rem] text-[#595C63] mt-[3rem]">
+          Diversify your portfolio and earn more from{" "}
           <span className="text-[#0CC14C]">new markets</span>
         </h1>
       </div>
 
-      <div className="mt-[10rem] bg-white shadow-sm rounded-[32px] mx-[4rem]  flex items-center justify-between">
-        <div className="pl-[4.5rem] mb-[5rem]">
-          <h1 className="leading-[3rem] text-[2.5rem] text-[#000000] ">
+      <div className="mt-[10rem] bg-white shadow-sm rounded-[32px] md:mx-[4rem]  flex flex-col md:flex-row items-center justify-between w-[90%] md-full py-[3.563rem] md:py-0 my-0 mx-auto md:m-0">
+        <div className=" px-[2rem] md:pl-[4.5rem]  md:mb-[5rem]">
+          <h1 className="leading-8 md:leading-[3rem] text-[1.688rem] md:text-[2.5rem] text-[#000000] font-medium ">
             Own a stake in the global
           </h1>
-          <h1 className="leading-[3rem] text-[2.5rem] text-[#000000] ">
-            {' '}
+          <h1 className=" leading-8 md:leading-[3rem] text-[1.688rem] md:text-[2.5rem] text-[#000000] font-medium ">
             agricultural innovation
           </h1>
-          <div className="flex  items-center gap-2 mt-[3rem]">
-            <p>Learn More</p>
+          <div className="flex  mt-[3rem] gap-2 w-fit">
+            <span className="leading-5 text-base">Learn More</span>
             <Image
               priority
               src="/images/learn-more-black.svg"
@@ -216,10 +217,10 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="mt-[9rem] mx-[4rem] flex items-center justify-between relative">
+      <div className="my-0 mx-auto mt-[4rem] md:mt-[9rem] md:mx-[4rem] flex flex-col gap-[3rem] md:gap-0 md:flex-row items-center justify-between relative w-[90%] md:w-full">
         <Link href="/cohort">
-          <div className="bg-[#C1E701] rounded-[32px] shadow-sm p-[2.375rem] w-[580px] cursor-pointer">
-            <h1 className="font-medium text-[2.5rem] leading-[3rem] text-[#000] w-[23.375rem] ">
+          <div className="bg-[#C1E701]  rounded-[32px] shadow-sm p-[2.375rem]  cursor-pointer">
+            <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[23.375rem] text-center ">
               Apply for the next Cohort
             </h1>
             <div className="flex justify-center py-[3rem]">
@@ -232,12 +233,12 @@ const LandingPage = () => {
                 alt="apply for next cohort"
               />
             </div>
-            <p className="text-[#000] text-[1.125rem] leading-[1.488rem] w-[32.813rem] ">
+            <p className="text-[#000] text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] ">
               Are you creating the next big thing that can take the giant Africa
               out of its negative balance of payment, enhance food security and
               even export to other countries?{' '}
             </p>
-            <div className="flex  items-center gap-2 mt-[3rem]">
+            <div className="flex  items-center gap-2 mt-[3rem] w-fit">
               <p>Learn More</p>
               <Image
                 priority
@@ -252,10 +253,10 @@ const LandingPage = () => {
         </Link>
 
         <div
-          className="bg-[#8B4DED] rounded-[32px] shadow-sm p-[2.375rem] w-[580px] text-white cursor-pointer"
+          className="bg-[#8B4DED] rounded-[32px] shadow-sm p-[2.375rem] text-white cursor-pointer  md:w-[580px]"
           onClick={() => setShow(true)}
         >
-          <h1 className="font-medium text-[2.5rem] leading-[3rem]  w-[23.375rem]">
+          <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem]  text-center">
             Learn, Earn, and Grow
           </h1>
           <div className="flex justify-center py-[3rem]">
@@ -268,11 +269,11 @@ const LandingPage = () => {
               alt="learn earn grow "
             />
           </div>
-          <p className=" text-[1.125rem] leading-[1.488rem] w-[32.813rem] ">
+          <p className="text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] ">
             The Agrify community is opening rails for anyone to easily jump into
             the budding and dynamic blockchain space.
           </p>
-          <div className="flex  items-center gap-2 mt-[3rem]">
+          <div className="flex  items-center gap-2 mt-[3rem] w-fit">
             <p>Learn More</p>
             <Image
               priority
@@ -286,17 +287,13 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <Modal
-        // className="absolute bottom-[100rem]"
-        show={show}
-        onClose={() => setShow(false)}
-      />
+      <Modal show={show} onClose={() => setShow(false)} />
 
       <div className="mt-[10rem] flex flex-col items-center">
-        <h1 className="font-semibold text-5xl leading-[3.5rem] w-[53.25rem] text-center">
+        <h1 className="font-semibold text-[2rem] md:text-5xl leading-[3rem] md:leading-[3.5rem] w-[22.375rem] md:w-[53.25rem] text-center">
           Democratizing Agriculture through Blockchain Technology
         </h1>
-        <p className="text-xl text-[#302F2D] mt-[1.5rem]">
+        <p className="text-xl leading-[1.688rem] text-center text-[#302F2D] mt-[1.5rem]">
           Join our waitlist to get early access
         </p>
 
@@ -308,13 +305,13 @@ const LandingPage = () => {
       </div>
 
       <div className="mt-[10rem] flex flex-col items-center">
-        <h1 className="font-semibold text-[2.5rem] leading-[3rem]  text-center">
+        <h1 className="font-semibold text-[2rem] md:text-[2.5rem] leading-[2.5rem] md:leading-[3rem]  text-center">
           FAQs
         </h1>
-        <div className="w-[59.625rem]">
+        <div className="w-[22.401rem] md:w-[59.625rem] mt-[4rem]">
           <div className="flex justify-between items-center border-b border-[#A1A7AB] pb-[1rem]">
-            <p className="font-medium text-2xl">What is Agrify?</p>
-            <div>
+            <p className="font-medium text-2xl leading-[2rem]">What is Agrify?</p>
+            <div className="w-fit">
               <Image
                 priority
                 src="/images/faqs.svg"
@@ -328,7 +325,7 @@ const LandingPage = () => {
 
           <div className="flex justify-between items-center border-b border-[#A1A7AB] pb-[1rem]">
             <p className="font-medium text-2xl">How does it work</p>
-            <div>
+            <div  className="w-fit">
               <Image
                 priority
                 src="/images/faqs.svg"
@@ -342,7 +339,7 @@ const LandingPage = () => {
 
           <div className="flex justify-between items-center border-b border-[#A1A7AB] pb-[1rem]">
             <p className="font-medium text-2xl">Is it safe to Invest?</p>
-            <div>
+            <div  className="w-fit">
               <Image
                 priority
                 src="/images/faqs.svg"
