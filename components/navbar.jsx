@@ -1,11 +1,15 @@
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useState, useRef } from "react";
+import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect, useState, useRef } from 'react';
 //Components
-import NavMoreDropdown from "./NavMoreDropdown";
-import { BsThreeDots } from "react-icons/bs";
+import NavMoreDropdown from './NavMoreDropdown';
+import { BsThreeDots } from 'react-icons/bs';
 
-const Navbar = ({ isBlack }) => {
+const Navbar = ({
+  isBlack,
+  showWaitlistBtn = false,
+  isTransparent = false,
+}) => {
   const [moreToggle, setMoreToggle] = useState(false);
 
   // All states
@@ -22,36 +26,35 @@ const Navbar = ({ isBlack }) => {
       setStickyInview(window.scrollY >= 500);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     // Remove the listener when cleaning up
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   useEffect(() => {
     if (moreToggle) {
-      
-      document.body.style.overflowY = "hidden";
+      document.body.style.overflowY = 'hidden';
     } else {
-      document.body.style.overflowY = "unset";
+      document.body.style.overflowY = 'unset';
     }
   }, [moreToggle]);
 
   const isSticky = () => {
     var classes =
-      "fixed w-full top-0 z-[8000] ease-in-out flex px-[1rem] md:px-[2rem] py-[2rem] lg:px-[4rem] lg:py-[3.125rem] items-center justify-between";
+      'fixed w-full top-0 z-[8000] ease-in-out flex px-[1rem] md:px-[2rem] py-[2rem] lg:px-[4rem] lg:py-[3.125rem] items-center justify-between';
     if (sticky) {
       classes =
-        "top-0 z-[9900] w-full flex px-[1rem] md:px-[2rem] py-[1rem] lg:px-[4rem] lg:py-[1rem] items-center justify-between invisible fixed translate-y-[-200px] bg-white";
+        'top-0 z-[9900] w-full flex px-[1rem] md:px-[2rem] py-[1rem] lg:px-[4rem] lg:py-[1rem] items-center justify-between invisible fixed translate-y-[-200px] bg-white';
     }
 
     if (duration) {
       classes =
-        "invisible fixed top-0 z-[9900] duration-[2s] w-full flex px-[1rem] md:px-[2rem] py-[1rem] lg:px-[4rem] lg:py-[1rem] items-center justify-between translate-y-[-200px] bg-white";
+        'invisible fixed top-0 z-[9900] duration-[2s] w-full flex px-[1rem] md:px-[2rem] py-[1rem] lg:px-[4rem] lg:py-[1rem] items-center justify-between translate-y-[-200px] bg-white';
     }
 
     if (stickyInview) {
       classes =
-        "visible fixed top-0 z-[9900] duration-1000 w-full flex px-[1rem] md:px-[2rem] py-[1rem] lg:px-[4rem] lg:py-[1rem] items-center justify-between translate-y-[-200px] bg-white flex translate-y-[0px]";
+        'visible fixed top-0 z-[9900] duration-1000 w-full flex px-[1rem] md:px-[2rem] py-[1rem] lg:px-[4rem] lg:py-[1rem] items-center justify-between translate-y-[-200px] bg-white flex translate-y-[0px]';
     }
 
     return classes;
@@ -60,7 +63,11 @@ const Navbar = ({ isBlack }) => {
   return (
     <>
       <div className="flex justify-between items-center border">
-        <nav className={isSticky()} style={{ backgroundColor: "#f5f5f5" }}>
+        <nav
+          className={`${isSticky()} bg-white ${
+            isTransparent ? 'lg:bg-transparent' : ''
+          }`}
+        >
           <Link href="/">
             {/* <a>
               <img
@@ -86,11 +93,15 @@ const Navbar = ({ isBlack }) => {
             />
           </Link>
           <div className="flex items-center justify-center gap-4">
-            <Link href="waitlist">
-              <button className="hidden md:block w-[11.688rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#0CC14C]">
-                <p className="text-white leading-6 font-medium ">Join Waitlist</p>
-              </button>
-            </Link>
+            {showWaitlistBtn && (
+              <Link href="waitlist">
+                <button className="hidden md:block w-[11.688rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#0CC14C]">
+                  <p className="text-white leading-6 font-medium ">
+                    Join Waitlist
+                  </p>
+                </button>
+              </Link>
+            )}
             <div className="flex items-center">
               {/* <Link href='https://agrify-africa.netlify.app/'>
                 <a>

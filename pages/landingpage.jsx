@@ -1,14 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
-import { useEffect } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Modal from '../components/Modal';
 const LandingPage = () => {
+  const [show, setShow] = useState(false);
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
+
   return (
     // <div className="bg-gray-100">
     //   <div className="block">
@@ -114,19 +117,19 @@ const LandingPage = () => {
     // </div>
     <div className="bg-gray-100 mt-[9rem] h-full">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="font-medium text-[4rem] leading-[4.5rem] ">
+        <h1 className="font-medium text-[2rem] md:text-[4rem] leading-[2.5rem] md:leading-[4.5rem] text-center ">
           Invest in the Future of
         </h1>
         <div className="font-['Signifier'] font-medium text-[4rem] leading-[4.5rem]">
           Agriculture
         </div>
 
-        <div className="mt-[2.5rem] text-centerw-[43.813rem] ">
-          <p className="text-[1.125rem] leading-[1.688rem] text-[#302F2D] ">
+        <div className="mt-[2.5rem] text-center w-[43.813rem] ">
+          <p className="text-base md:text-[1.125rem] leading-[1.25rem] md:leading-[1.688rem] text-[#302F2D] text-center">
             Discover & invest in top-tier innovative agribusinesses, digital
-            products,{" "}
+            products,{' '}
           </p>
-          <p className="text-[1.125rem] leading-[1.688rem] text-[#302F2D]  px-[10rem]">
+          <p className="text-base md:text-[1.125rem] leading-[1.25rem] md:leading-[1.688rem] text-[#302F2D]  px-[10rem] text-center">
             farming techniques and hardware.
           </p>
         </div>
@@ -150,7 +153,7 @@ const LandingPage = () => {
 
       <div className="mt-[10.188rem] flex flex-col items-center justify-center">
         <h1 className="font-medium text-[3.75rem] leading-[3.5rem] ">
-          Agriculture investing made{" "}
+          Agriculture investing made{' '}
           <span className="font-['Signifier'] text-[3.75rem]">simple</span>
         </h1>
 
@@ -174,7 +177,7 @@ const LandingPage = () => {
         </div>
 
         <h1 className="font-medium text-[2.313rem] leading-[2.813rem] text-[#595C63] mt-[3rem]">
-          Diversify your portfolio and earn more from{" "}
+          Diversify your portfolio and earn more from{' '}
           <span className="text-[#0CC14C]">new markets</span>
         </h1>
       </div>
@@ -185,7 +188,7 @@ const LandingPage = () => {
             Own a stake in the global
           </h1>
           <h1 className="leading-[3rem] text-[2.5rem] text-[#000000] ">
-            {" "}
+            {' '}
             agricultural innovation
           </h1>
           <div className="flex  items-center gap-2 mt-[3rem]">
@@ -213,7 +216,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="mt-[9rem] mx-[4rem] flex items-center justify-between">
+      <div className="mt-[9rem] mx-[4rem] flex items-center justify-between relative">
         <Link href="/cohort">
           <div className="bg-[#C1E701] rounded-[32px] shadow-sm p-[2.375rem] w-[580px] cursor-pointer">
             <h1 className="font-medium text-[2.5rem] leading-[3rem] text-[#000] w-[23.375rem] ">
@@ -232,7 +235,7 @@ const LandingPage = () => {
             <p className="text-[#000] text-[1.125rem] leading-[1.488rem] w-[32.813rem] ">
               Are you creating the next big thing that can take the giant Africa
               out of its negative balance of payment, enhance food security and
-              even export to other countries?{" "}
+              even export to other countries?{' '}
             </p>
             <div className="flex  items-center gap-2 mt-[3rem]">
               <p>Learn More</p>
@@ -248,39 +251,46 @@ const LandingPage = () => {
           </div>
         </Link>
 
-        <Link href="/">
-          <div className="bg-[#8B4DED] rounded-[32px] shadow-sm p-[2.375rem] w-[580px] text-white cursor-pointer">
-            <h1 className="font-medium text-[2.5rem] leading-[3rem]  w-[23.375rem]">
-              Learn, Earn, and Grow
-            </h1>
-            <div className="flex justify-center py-[3rem]">
-              <Image
-                priority
-                src="/images/grow.svg"
-                className=""
-                height={427.74}
-                width={295}
-                alt="learn earn grow "
-              />
-            </div>
-            <p className=" text-[1.125rem] leading-[1.488rem] w-[32.813rem] ">
-              The Agrify community is opening rails for anyone to easily jump into
-              the budding and dynamic blockchain space.
-            </p>
-            <div className="flex  items-center gap-2 mt-[3rem]">
-              <p>Learn More</p>
-              <Image
-                priority
-                src="/images/learn-more-white.svg"
-                className=""
-                height={14.68}
-                width={18}
-                alt="learn more"
-              />
-            </div>
+        <div
+          className="bg-[#8B4DED] rounded-[32px] shadow-sm p-[2.375rem] w-[580px] text-white cursor-pointer"
+          onClick={() => setShow(true)}
+        >
+          <h1 className="font-medium text-[2.5rem] leading-[3rem]  w-[23.375rem]">
+            Learn, Earn, and Grow
+          </h1>
+          <div className="flex justify-center py-[3rem]">
+            <Image
+              priority
+              src="/images/grow.svg"
+              className=""
+              height={427.74}
+              width={295}
+              alt="learn earn grow "
+            />
           </div>
-        </Link>
+          <p className=" text-[1.125rem] leading-[1.488rem] w-[32.813rem] ">
+            The Agrify community is opening rails for anyone to easily jump into
+            the budding and dynamic blockchain space.
+          </p>
+          <div className="flex  items-center gap-2 mt-[3rem]">
+            <p>Learn More</p>
+            <Image
+              priority
+              src="/images/learn-more-white.svg"
+              className=""
+              height={14.68}
+              width={18}
+              alt="learn more"
+            />
+          </div>
+        </div>
       </div>
+
+      <Modal
+        // className="absolute bottom-[100rem]"
+        show={show}
+        onClose={() => setShow(false)}
+      />
 
       <div className="mt-[10rem] flex flex-col items-center">
         <h1 className="font-semibold text-5xl leading-[3.5rem] w-[53.25rem] text-center">
@@ -301,8 +311,8 @@ const LandingPage = () => {
         <h1 className="font-semibold text-[2.5rem] leading-[3rem]  text-center">
           FAQs
         </h1>
-        <div className="border  w-[59.625rem]">
-          <div className="flex justify-between items-center border-b-1 border-[#A1A7AB] pb-[1rem]">
+        <div className="w-[59.625rem]">
+          <div className="flex justify-between items-center border-b border-[#A1A7AB] pb-[1rem]">
             <p className="font-medium text-2xl">What is Agrify?</p>
             <div>
               <Image
@@ -316,7 +326,7 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div className="flex justify-between items-center border-b-1 border-[#A1A7AB] pb-[1rem]">
+          <div className="flex justify-between items-center border-b border-[#A1A7AB] pb-[1rem]">
             <p className="font-medium text-2xl">How does it work</p>
             <div>
               <Image
@@ -330,7 +340,7 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div className="flex justify-between items-center border-b-1 border-[#A1A7AB] pb-[1rem]">
+          <div className="flex justify-between items-center border-b border-[#A1A7AB] pb-[1rem]">
             <p className="font-medium text-2xl">Is it safe to Invest?</p>
             <div>
               <Image

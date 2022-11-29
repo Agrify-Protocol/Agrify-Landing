@@ -1,20 +1,23 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
+import Navbar from '../components/navbar';
 
 const WaitlistSuccess = () => {
   return (
-    <div className="flex ">
-      <div className="w-[50%] h-full">
-        <div className="relative">
-          <img src="/images/side-image.svg" alt="" height="100%" />
-        </div>
+    <>
+      <Navbar isBlack={true} isTransparent />
+      <div className="flex ">
+        <div className="w-[50%] h-full">
+          <div className="relative">
+            <img src="/images/side-image.svg" alt="" height="100%" />
+          </div>
 
-        <h1 className=" absolute top-[10.938rem] font-semibold text-5xl leading-[3.5rem] w-[37.375rem] text-[#595C63] text-center">
-          Join our waitlist to be a part of a new Africa{" "}
-        </h1>
-      </div>
-      <div className="w-[50%] pl-[3rem]">
-        {/* <div className="mt-[11rem]  pb-[9.438rem]">
+          <h1 className=" absolute top-[10.938rem] font-semibold text-5xl leading-[3.5rem] w-[37.375rem] text-[#595C63] text-center">
+            Join our waitlist to be a part of a new Africa{' '}
+          </h1>
+        </div>
+        <div className="w-[50%] pl-[3rem]">
+          {/* <div className="mt-[11rem]  pb-[9.438rem]">
           <h1 className="font-medium text-xl leading-6 text-[#59C43A]">
             Waitlist
           </h1>
@@ -59,7 +62,7 @@ const WaitlistSuccess = () => {
           </form>
         </div> */}
 
-        <div className="flex flex-col justify-center items-center mt-[10rem] gap-[1.5rem]">
+          <div className="flex flex-col justify-center items-center mt-[10rem] gap-[1.5rem]">
             <div className="">
               <Image
                 priority
@@ -70,10 +73,12 @@ const WaitlistSuccess = () => {
                 alt=""
               />
             </div>
-            <h2 className="font-medium text-xl leading-6 text-[#000]">You’re In!</h2>
+            <h2 className="font-medium text-xl leading-6 text-[#000]">
+              You’re In!
+            </h2>
             <p className="leading-[1.688rem] text-[#302F2D] text-xl w-[21rem]">
-              You are on the private alpha waitlist! Invite friends to move up the
-              line.
+              You are on the private alpha waitlist! Invite friends to move up
+              the line.
             </p>
             <button className="w-[12.125rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#0CC14C]">
               <div className="flex items-center justify-center gap-3">
@@ -87,12 +92,15 @@ const WaitlistSuccess = () => {
                     alt=""
                   />
                 </div>
-                <p className="text-white leading-6 font-medium m-0 p-0">Tweet It</p>
+                <p className="text-white leading-6 font-medium m-0 p-0">
+                  Tweet It
+                </p>
               </div>
             </button>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
