@@ -118,7 +118,7 @@ const LandingPage = () => {
     //     </div>
     //   </div>
     // </div>
-    <div className="bg-gray-100 mt-[9rem] h-full my-0 mx-auto border border-red-200">
+    <div className="bg-gray-100 mt-[15rem] h-full my-0 mx-auto">
       <div className="flex flex-col items-center justify-center">
         <h1 className="font-medium text-[2rem] md:text-[4rem] leading-[2.5rem] md:leading-[4.5rem] text-center ">
           Invest in the Future of
@@ -128,15 +128,15 @@ const LandingPage = () => {
         </div>
 
         <div className="mt-[2.5rem] text-center w-[43.813rem] ">
-          <p className="text-base md:text-[1.25rem] leading-[1.25rem] md:leading-[1.688rem] text-[#302F2D] font-normal max-w-[22.375rem] my-0 mx-auto">
+          <p className="text-base md:text-[1.25rem] leading-[1.25rem] md:leading-[1.688rem] text-[#302F2D] font-normal max-w-[22.375rem] md:max-w-[43.813rem] my-0 mx-auto">
             Discover & invest in top-tier innovative agribusinesses, digital
             products,farming techniques and hardware.
           </p>
         </div>
 
-        <Link href="/waitlist">
+        <Link href="#learn">
           <button className="w-[12.25rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#0CC14C] mt-[3rem]">
-            <p className="text-white leading-6 font-medium ">Join Waitlist</p>
+            <p className="text-white leading-6 font-medium ">Learn more</p>
           </button>
         </Link>
       </div>
@@ -152,14 +152,14 @@ const LandingPage = () => {
       </div>
 
       <div className="mt-[10.188rem] flex flex-col items-center justify-center pl-[1.125rem] md:pl-0">
-        <h1 className="font-medium text-[2.313rem] md:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem]  ">
+        <h1 className="font-medium text-[2.313rem] md:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] text-center ">
           Agriculture investing made{" "}
           <span className="font-['Signifier'] text-[2.313rem] md:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem]">
             simple
           </span>
         </h1>
 
-        <div className="mt-[1.5rem] text-base md:text-xl leading-5 md:leading-[1.688rem] text-[#302F2D] w-[22.25rem] md:w-[54.875rem]">
+        <div className="mt-[1.5rem] text-base md:text-xl leading-5 md:leading-[1.688rem] text-[#302F2D] w-[22.25rem] md:w-[54.875rem] text-center">
           <div>
             <p>
               As global food demand and use of sophisticated technology in
@@ -178,13 +178,13 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <h1 className="font-medium text-2xl md:text-[2.313rem] leading-8 md:leading-[2.813rem] text-[#595C63] mt-[3rem]">
+        <h1 className="font-medium text-2xl md:text-[2.313rem] leading-8 md:leading-[2.813rem] text-[#595C63] mt-[3rem] text-center">
           Diversify your portfolio and earn more from{" "}
           <span className="text-[#0CC14C]">new markets</span>
         </h1>
       </div>
 
-      <div className="mt-[10rem] bg-white shadow-sm rounded-[32px] md:mx-[4rem]  flex flex-col md:flex-row items-center justify-between w-[90%] md-full py-[3.563rem] md:py-0 my-0 mx-auto md:m-0">
+      <div className="mt-[10rem] bg-white shadow-sm rounded-[32px] md:mx-[4rem]  flex flex-col md:flex-row items-center justify-between w-[90%] md-full py-[3.563rem] md:py-0 my-0 mx-auto ">
         <div className=" px-[2rem] md:pl-[4.5rem]  md:mb-[5rem]">
           <h1 className="leading-8 md:leading-[3rem] text-[1.688rem] md:text-[2.5rem] text-[#000000] font-medium ">
             Own a stake in the global
@@ -217,10 +217,10 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="my-0 mx-auto mt-[4rem] md:mt-[9rem] md:mx-[4rem] flex flex-col gap-[3rem] md:gap-0 md:flex-row items-center justify-between relative w-[90%] md:w-full">
+      <div className="my-0 mx-auto mt-[4rem] md:mt-[9rem] md:mx-[4rem] flex flex-col gap-[3rem]  md:flex-row  justify-between relative w-[90%]" id="learn">
         <Link href="/cohort">
-          <div className="bg-[#C1E701]  rounded-[32px] shadow-sm p-[2.375rem]  cursor-pointer">
-            <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[23.375rem] text-center ">
+          <div className="bg-[#C1E701]  rounded-[32px] shadow-sm p-[2.375rem]  cursor-pointer max-w-[38rem]">
+            <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[23.375rem] text-center md:text-left ">
               Apply for the next Cohort
             </h1>
             <div className="flex justify-center py-[3rem]">
@@ -253,10 +253,10 @@ const LandingPage = () => {
         </Link>
 
         <div
-          className="bg-[#8B4DED] rounded-[32px] shadow-sm p-[2.375rem] text-white cursor-pointer  md:w-[580px]"
+          className="bg-[#8B4DED] rounded-[32px] shadow-sm p-[2.375rem] text-white cursor-pointer max-w-[38rem]"
           onClick={() => setShow(true)}
         >
-          <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem]  text-center">
+          <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#fff] w-full md:w-[23.375rem] text-center md:text-left ">
             Learn, Earn, and Grow
           </h1>
           <div className="flex justify-center py-[3rem]">
@@ -299,7 +299,7 @@ const LandingPage = () => {
 
         <Link href="/waitlist">
           <button className="w-[13.813rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#011308] mt-[2rem] hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C]">
-            <p className="text-white leading-6 font-medium  ">Join Waitlist</p>
+            <p className="text-white leading-6 font-medium  ">Get early access</p>
           </button>
         </Link>
       </div>
