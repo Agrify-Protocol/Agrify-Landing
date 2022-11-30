@@ -5,7 +5,11 @@ import { useEffect, useState, useRef } from "react";
 import NavMoreDropdown from "./NavMoreDropdown";
 import { BsThreeDots } from "react-icons/bs";
 
-const Navbar = ({ isBlack }) => {
+const Navbar = ({
+  isBlack,
+  showWaitlistBtn = false,
+  isTransparent = false,
+}) => {
   const [moreToggle, setMoreToggle] = useState(false);
 
   // All states
@@ -29,7 +33,6 @@ const Navbar = ({ isBlack }) => {
 
   useEffect(() => {
     if (moreToggle) {
-      
       document.body.style.overflowY = "hidden";
     } else {
       document.body.style.overflowY = "unset";
@@ -59,10 +62,16 @@ const Navbar = ({ isBlack }) => {
 
   return (
     <>
-      <div className="flex justify-between items-center border">
-        <nav className={isSticky()} style={{ backgroundColor: "#f5f5f5" }}>
-          <Link href="/">
-            {/* <a>
+      {/* <nav
+          className={`${isSticky()} bg-white ${
+            isTransparent ? 'lg:bg-transparent' : ''
+          }`}
+        > */}
+      <nav
+        className={`${isSticky()}  ${isTransparent ? "lg:bg-transparent" : ""}`}
+      >
+        <Link href="/">
+          {/* <a>
               <img
                 className={"w-[8.5rem]" + (sticky ? " hidden" : " ")}
                 alt='logo'
@@ -76,44 +85,35 @@ const Navbar = ({ isBlack }) => {
                 src='/images/logo.svg'
               />
             </a> */}
-            <Image
-              priority
-              src="/images/logo-nav.svg"
-              className=""
-              height={48}
-              width={123.26}
-              alt="logo"
-            />
-          </Link>
-          <div className="flex items-center justify-center gap-4">
-            <Link href="waitlist">
-              <button className="hidden md:block w-[11.688rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#0CC14C]">
-                <p className="text-white leading-6 font-medium ">Join Waitlist</p>
+          <Image
+            priority
+            src="/images/logo-nav.svg"
+            className=""
+            height={48}
+            width={123.26}
+            alt="logo"
+          />
+        </Link>
+        <div className="flex items-center justify-end  gap-6">
+          {showWaitlistBtn && (
+            <Link href="/waitlist">
+              <button className="hidden md:block w-[10.688rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[2rem] bg-[#011308] mt-[2rem] hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C]">
+                <p className="text-white leading-6 font-medium ">
+                  Join Waitlist
+                </p>
               </button>
             </Link>
-            <div className="flex items-center">
-              {/* <Link href='https://agrify-africa.netlify.app/'>
-                <a>
-                  <button
-                    className={
-                      "px-8 py-2 mx-10 rounded-[3rem] text-white text-sm bg-black" +
-                      (sticky ? " " : " hidden")
-                    }
-                  >
-                    explore
-                  </button>
-                </a>
-              </Link> */}
-              <div
-                onClick={() => setMoreToggle(!moreToggle)}
-                className="lg:block cursor-pointer"
-              >
-                <BsThreeDots className="text-black" size={32} />
-              </div>
-            </div>
+          )}
+
+          <div
+            onClick={() => setMoreToggle(!moreToggle)}
+            className="lg:block cursor-pointer w-fit"
+          >
+            <BsThreeDots className="text-black" size={32} />
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
+
       <NavMoreDropdown moreToggle={moreToggle} setMoreToggle={setMoreToggle} />
     </>
   );

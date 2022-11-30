@@ -1,72 +1,66 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
+import Navbar from '../components/navbar';
 
 const Waitlist = () => {
   return (
-    <div className="flex ">
-      <div className="w-[50%] h-full">
-        {/* <div className="relative">
-          <Image
-            priority
-            src="/images/side-image.svg"
-            className=""
-            height={1000}
-            width={780}
-            alt=""
-          />
-        </div> */}
-        <div className="relative">
-                <img src="/images/side-image.svg" alt="" height="100%"/>
-        </div>
-
-        <h1 className=" absolute top-[10.938rem] font-semibold text-5xl leading-[3.5rem] w-[37.375rem] text-[#595C63] text-center">
-          Join our waitlist to be a part of a new Africa{" "}
-        </h1>
-      </div>
-      <div className="w-[50%] pl-[3rem]">
-        <div className="mt-[11rem]  pb-[9.438rem]">
-          <h1 className="font-medium text-xl leading-6 text-[#59C43A]">
-            Waitlist
+    <div className="">
+      <Navbar isBlack={true} isTransparent />
+      <div className="flex flex-col md:flex-row gap-[5rem] md:gap-0 ">
+        <div className="w-[100%] md:w-[50%] h-[18.75rem] md:h-full">
+          <div className="relative">
+            <img src="/images/side-image.svg" alt="" height="100%" />
+          </div>
+          <h1 className=" absolute top-[10.938rem] font-semibold text-[1.688rem]  md:text-5xl leading-[2.5rem] leading-[3.5rem] text-[#595C63] text-center max-w-[37.375rem] px-[1rem] md:px-0">
+            Join our waitlist to be a part of a new Africa{' '}
           </h1>
-          <form className=" flex flex-col gap-4 mt-4">
-            <label
-              htmlFor="firstName"
-              className="font-medium text-lg leading-8"
-            >
-              Full Name <span className="text-[#EC1B1B]">*</span>
-            </label>
-            <input
-              type="text"
-              className={` bg-white outline-none w-[34.75rem] p-3 rounded-[13px]`}
-            />
-            <label htmlFor="email" className="font-medium text-lg leading-8">
-              Email Address <span className="text-[#EC1B1B]">*</span>
-            </label>
-            <input
-              type="email"
-              className={` bg-white outline-none w-[34.75rem] p-3 rounded-[13px]`}
-              id="email"
-            />
-
-            <label htmlFor="password" className="font-medium text-lg leading-8">
-              Location <span className="text-[#EC1B1B]">*</span>
-            </label>
-            <input
-              type="text"
-              className={` bg-white outline-none w-[34.75rem] p-3 rounded-[13px]`}
-              id="password"
-            />
-
-            <Link href="/waitlist-success">
-              <a>
-                <button className="w-[34.75rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#0CC14C] mt-[3rem]">
-                  <p className="text-white leading-6 font-medium ">
-                    Join Waitlist
-                  </p>
-                </button>
-              </a>
-            </Link>
-          </form>
+        </div>
+        <div className="w-[100%] md:w-[50%] md:pl-[3rem]">
+          <div className="mt-[11rem]  pb-[9.438rem] ">
+            <h1 className="font-medium text-center text-xl leading-6 text-[#59C43A]">
+              Waitlist
+            </h1>
+            <form className=" flex flex-col gap-4 mt-4 px-[1.688rem] md:px-0 w-[100%] md:w-[34.75rem]">
+              <label
+                htmlFor="firstName"
+                className="font-medium text-lg leading-8"
+              >
+                Full Name <span className="text-[#EC1B1B]">*</span>
+              </label>
+              <input
+                type="text"
+                className={` bg-white outline-none block w-[100%] p-3 rounded-[13px]`}
+              />
+              <label htmlFor="email" className="font-medium text-lg leading-8">
+                Email Address <span className="text-[#EC1B1B]">*</span>
+              </label>
+              <input
+                type="email"
+                className={` bg-white outline-none  p-3 rounded-[13px]`}
+                id="email"
+              />
+              <label
+                htmlFor="password"
+                className="font-medium text-lg leading-8"
+              >
+                Location <span className="text-[#EC1B1B]">*</span>
+              </label>
+              <input
+                type="text"
+                className={` bg-white outline-none p-3 rounded-[13px]`}
+                id="password"
+              />
+              <Link href="/waitlist-success">
+                <a>
+                  <button className=" h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#0CC14C] mt-[3rem]">
+                    <p className="text-white leading-6 font-medium ">
+                      Join Waitlist
+                    </p>
+                  </button>
+                </a>
+              </Link>
+            </form>
+          </div>
         </div>
       </div>
     </div>

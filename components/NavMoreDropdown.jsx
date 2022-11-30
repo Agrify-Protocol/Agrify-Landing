@@ -1,23 +1,23 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 //Components
-import { VscChromeClose } from "react-icons/vsc";
+import { VscChromeClose } from 'react-icons/vsc';
 
 const NavMoreDropdown = ({ moreToggle, setMoreToggle }) => {
   return (
     <div
       className={
-        "duration-500 flex flex-col justify-between fixed left-0 top-0 w-screen h-screen z-[10000] p-14 " +
+        'duration-500 flex flex-col justify-between fixed left-0 top-0 w-screen h-screen z-[10000] p-14 ' +
         (moreToggle
-          ? "pointer-events-auto bg-white left-[0]"
-          : "pointer-events-none bg-white/0 left-[-100vw]")
+          ? 'pointer-events-auto bg-white left-[0]'
+          : 'pointer-events-none bg-white/0 left-[-100vw]')
       }
     >
       <div className="w-full right-[30px] top-[30px] flex items-end justify-between">
         <Link href="/">
-          
-            <a><img className="w-[8.5rem]" alt="logo" src="/images/logo.svg"/></a>
-          
+          <a>
+            <img className="w-[8.5rem]" alt="logo" src="/images/logo.svg" />
+          </a>
         </Link>
 
         <div className="flex items-center">

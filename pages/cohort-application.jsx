@@ -111,7 +111,7 @@ const CohortForm = () => {
   };
 
   return (
-    <div className="flex px-10 lg:px-0 w-full justify-center pb-[15rem]">
+    <div className="flex px-10 lg:px-0 w-full justify-center pb-[7rem] lg:pb-[15rem]">
       <div className="mt-[7.75rem] lg:w-1/3">
         <h1 className="font-medium text-[24px] leading-[32px]">
           Please Fill out the required information
@@ -233,7 +233,7 @@ const CohortForm = () => {
           </label>
 
           <div className="flex items-center gap-3">
-          <div className="">
+          <div className="w-fit">
                   <Image
                     priority
                     src="/images/upload.svg"

@@ -1,86 +1,86 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @font-face {
   font-family: "Suisse Int'l";
-  src: url("/fonts/Suisse Int'l/SuisseIntl-Black.otf") format("truetype");
+  src: url("/fonts/Suisse Int'l/SuisseIntl-Black.otf") format('truetype');
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Suisse Int'l";
-  src: url("/fonts/Suisse Int'l/SuisseIntl-Bold.otf") format("truetype");
+  src: url("/fonts/Suisse Int'l/SuisseIntl-Bold.otf") format('truetype');
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Suisse Int'l";
-  src: url("/fonts/Suisse Int'l/SuisseIntl-Medium.otf") format("truetype");
+  src: url("/fonts/Suisse Int'l/SuisseIntl-Medium.otf") format('truetype');
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Suisse Int'l";
-  src: url("/fonts/Suisse Int'l/SuisseIntl-Regular.otf") format("truetype");
+  src: url("/fonts/Suisse Int'l/SuisseIntl-Regular.otf") format('truetype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Suisse Int'l";
-  src: url("/fonts/Suisse Int'l/SuisseIntl-Light.otf") format("truetype");
+  src: url("/fonts/Suisse Int'l/SuisseIntl-Light.otf") format('truetype');
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Suisse Int'l";
-  src: url("/fonts/Suisse Int'l/SuisseIntl-Thin.otf") format("truetype");
+  src: url("/fonts/Suisse Int'l/SuisseIntl-Thin.otf") format('truetype');
   font-weight: 200;
 }
 
 @font-face {
   font-family: "Suisse Int'l";
-  src: url("/fonts/Suisse Int'l/SuisseIntl-Ultralight.otf") format("truetype");
+  src: url("/fonts/Suisse Int'l/SuisseIntl-Ultralight.otf") format('truetype');
   font-weight: 200;
 }
 
 @font-face {
-  font-family: "Roses";
-  src: url("/fonts/RosesBoleroDemo/Roses Bolero.otf") format("truetype");
+  font-family: 'Roses';
+  src: url('/fonts/RosesBoleroDemo/Roses Bolero.otf') format('truetype');
 }
 
 @font-face {
-  font-family: "Sharp Grotesk";
-  src: url("/fonts/sharpgrotesk/SharpGroteskMedium20.ttf") format("truetype");
+  font-family: 'Sharp Grotesk';
+  src: url('/fonts/sharpgrotesk/SharpGroteskMedium20.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Signifier";
-  src: url("/fonts/Test Signifier/TestSignifier-Lightitalic.otf") format("truetype");
+  font-family: 'Signifier';
+  src: url('/fonts/Test Signifier/TestSignifier-LightItalic.otf')
+    format('truetype');
 }
-
 
 html,
 body {
   padding: 0;
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   font-family: "Suisse Int'l";
   color: #011308;
   background-color: #f5f5f5;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
-}
+} */
 
 a {
   color: inherit;
@@ -89,14 +89,7 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-} */
