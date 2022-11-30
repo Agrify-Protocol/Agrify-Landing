@@ -10,7 +10,7 @@ import { UploadFile } from "../utils/file-upload";
 
 const CohortForm = () => {
   const inputStyles =
-    "mt-1 block w-full px-3 py-3 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none invalid:border-red-500 invalid:text-red-600 focus:invalid:border-red-500 focus:invalid:ring-red-500 ";
+    "mt-1 block w-full md:w-[34.75rem] px-3 py-3 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none invalid:border-red-500 invalid:text-red-600 focus:invalid:border-red-500 focus:invalid:ring-red-500 ";
 
   const [firstName, setFirstName] = useState(" ");
   const [lastName, setLastName] = useState(" ");
@@ -112,7 +112,7 @@ const CohortForm = () => {
 
   return (
     <div className="flex px-10 lg:px-0 w-full justify-center pb-[7rem] lg:pb-[15rem]">
-      <div className="mt-[7.75rem] lg:w-1/3">
+      <div className="mt-[7.75rem] lg:w-1/3 ">
         <h1 className="font-medium text-[24px] leading-[32px]">
           Please Fill out the required information
           <span className="text-[#EC1B1B]">*</span>

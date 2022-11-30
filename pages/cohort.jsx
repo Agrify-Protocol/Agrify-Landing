@@ -30,7 +30,7 @@ const Cohort = () => {
             even export to other countries?
           </p>
           <Link href="/cohort-application">
-            <button className=" p-3 px-12 lg:px-14 mt-6  text-white hover:text-white bg-[#011308] hover:bg-ag-green rounded-[50px] w-max block mx-auto md:mx-0">
+            <button className=" p-3 px-12 lg:px-14 mt-6  text-white hover:text-white bg-[#011308] hover:bg-ag-green rounded-[50px] w-max block mx-auto lg:mx-0">
               start application
             </button>
           </Link>
