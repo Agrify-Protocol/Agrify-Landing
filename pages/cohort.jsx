@@ -15,7 +15,7 @@ const Cohort = () => {
   return (
     <div className="">
       <Navbar isBlack={true} className="bg-[#E1EBDC]" />
-      <div className=" bg-[#E1EBDC] h-[900px] flex flex-col md:flex-row md:justify-between items-center p-10 md:p-20 pt-[150px]  ">
+      <div className=" bg-[#E1EBDC] h-[900px] flex flex-col lg:flex-row lg:justify-between items-center p-10 lg:p-20 pt-[150px]  ">
         <div
           className="top-[120px] lg:top-[180px]  z-50  md:max-w-[50%]"
           // data-aos="fade-right"
@@ -30,7 +30,7 @@ const Cohort = () => {
             even export to other countries?
           </p>
           <Link href="/cohort-application">
-            <button className=" p-3 px-12 lg:px-14 mt-6  text-white hover:text-white bg-[#011308] hover:bg-ag-green rounded-[50px] w-max block mx-auto md:mx-0">
+            <button className=" p-3 px-12 lg:px-14 mt-6  text-white hover:text-white bg-[#011308] hover:bg-ag-green rounded-[50px] w-max block mx-auto lg:mx-0">
               start application
             </button>
           </Link>

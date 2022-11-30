@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import { useEffect, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Modal from "../components/Modal";
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Modal from '../components/Modal';
 const LandingPage = () => {
   const [show, setShow] = useState(false);
   useEffect(() => {
@@ -152,14 +152,14 @@ const LandingPage = () => {
       </div>
 
       <div className="mt-[10.188rem] flex flex-col items-center justify-center pl-[1.125rem] md:pl-0">
-        <h1 className="font-medium text-[2.313rem] md:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] text-center ">
-          Agriculture investing made{" "}
+        <h1 className="font-medium text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] text-center ">
+          Agriculture investing made{' '}
           <span className="font-['Signifier'] text-[2.313rem] md:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem]">
             simple
           </span>
         </h1>
 
-        <div className="mt-[1.5rem] text-base md:text-xl leading-5 md:leading-[1.688rem] text-[#302F2D] w-[22.25rem] md:w-[54.875rem] text-center">
+        <div className="mt-[1.5rem] text-base md:text-[1.25rem] lg:text-xl leading-5 md:leading-[1.688rem] text-[#302F2D] w-[22.25rem] md:w-auto text-center md:px-[2rem] lg:px-0">
           <div>
             <p>
               As global food demand and use of sophisticated technology in
@@ -178,8 +178,8 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <h1 className="font-medium text-2xl md:text-[2.313rem] leading-8 md:leading-[2.813rem] text-[#595C63] mt-[3rem] text-center">
-          Diversify your portfolio and earn more from{" "}
+        <h1 className="font-medium text-2xl md-[1.688rem] lg:text-[2.313rem] leading-8 md:leading-[2.813rem] text-[#595C63] mt-[3rem] text-center">
+          Diversify your portfolio and earn more from{' '}
           <span className="text-[#0CC14C]">new markets</span>
         </h1>
       </div>
@@ -217,10 +217,13 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="my-0 mx-auto mt-[4rem] md:mt-[9rem] md:mx-[4rem] flex flex-col gap-[3rem]  md:flex-row  justify-between relative w-[90%]" id="learn">
+      <div
+        className="my-0 mx-auto mt-[4rem] md:mt-[9rem] md:mx-[4rem] flex flex-col gap-[3rem]  md:flex-row justify-between relative w-[90%]"
+        id="learn"
+      >
         <Link href="/cohort">
-          <div className="bg-[#C1E701]  rounded-[32px] shadow-sm p-[2.375rem]  cursor-pointer max-w-[38rem]">
-            <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[23.375rem] text-center md:text-left ">
+          <div className="bg-[#C1E701]  rounded-[32px] shadow-sm p-[2.375rem]  cursor-pointer max-w-[38rem] md:max-w-[50%]">
+            <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[auto] text-center md:text-left ">
               Apply for the next Cohort
             </h1>
             <div className="flex justify-center py-[3rem]">
@@ -253,10 +256,10 @@ const LandingPage = () => {
         </Link>
 
         <div
-          className="bg-[#8B4DED] rounded-[32px] shadow-sm p-[2.375rem] text-white cursor-pointer max-w-[38rem]"
+          className="bg-[#8B4DED] rounded-[32px] shadow-sm p-[2.375rem] text-white cursor-pointer max-w-[38rem] md:max-w-[50%]"
           onClick={() => setShow(true)}
         >
-          <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#fff] w-full md:w-[23.375rem] text-center md:text-left ">
+          <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#fff] w-full md:w-[auto] text-center md:text-left ">
             Learn, Earn, and Grow
           </h1>
           <div className="flex justify-center py-[3rem]">
@@ -290,7 +293,7 @@ const LandingPage = () => {
       <Modal show={show} onClose={() => setShow(false)} />
 
       <div className="mt-[10rem] flex flex-col items-center">
-        <h1 className="font-semibold text-[2rem] md:text-5xl leading-[3rem] md:leading-[3.5rem] w-[22.375rem] md:w-[53.25rem] text-center">
+        <h1 className="font-semibold text-[2rem] md:text-[2.5rem] lg:text-5xl leading-[3rem] md:leading-[3.5rem] w-[22.375rem] md:w-[53.25rem] text-center ">
           Democratizing Agriculture through Blockchain Technology
         </h1>
         <p className="text-xl leading-[1.688rem] text-center text-[#302F2D] mt-[1.5rem]">
@@ -299,7 +302,9 @@ const LandingPage = () => {
 
         <Link href="/waitlist">
           <button className="w-[13.813rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#011308] mt-[2rem] hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C]">
-            <p className="text-white leading-6 font-medium  ">Get early access</p>
+            <p className="text-white leading-6 font-medium  ">
+              Get early access
+            </p>
           </button>
         </Link>
       </div>
@@ -308,9 +313,11 @@ const LandingPage = () => {
         <h1 className="font-semibold text-[2rem] md:text-[2.5rem] leading-[2.5rem] md:leading-[3rem]  text-center">
           FAQs
         </h1>
-        <div className="w-[22.401rem] md:w-[59.625rem] mt-[4rem]">
+        <div className="w-[22.401rem]  mt-[4rem]">
           <div className="flex justify-between items-center border-b border-[#A1A7AB] pb-[1rem]">
-            <p className="font-medium text-2xl leading-[2rem]">What is Agrify?</p>
+            <p className="font-medium text-2xl leading-[2rem]">
+              What is Agrify?
+            </p>
             <div className="w-fit">
               <Image
                 priority
@@ -325,7 +332,7 @@ const LandingPage = () => {
 
           <div className="flex justify-between items-center border-b border-[#A1A7AB] pb-[1rem]">
             <p className="font-medium text-2xl">How does it work</p>
-            <div  className="w-fit">
+            <div className="w-fit">
               <Image
                 priority
                 src="/images/faqs.svg"
@@ -339,7 +346,7 @@ const LandingPage = () => {
 
           <div className="flex justify-between items-center border-b border-[#A1A7AB] pb-[1rem]">
             <p className="font-medium text-2xl">Is it safe to Invest?</p>
-            <div  className="w-fit">
+            <div className="w-fit">
               <Image
                 priority
                 src="/images/faqs.svg"
