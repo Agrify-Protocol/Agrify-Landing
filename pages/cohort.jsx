@@ -21,10 +21,10 @@ const Cohort = () => {
           // data-aos="fade-right"
           // data-aos-duration="2500"
         >
-          <h1 className=" font-medium text-[30px] md:text-[3rem] lg:text-[48px] leading-[32px] md:leading-[56px] w-full py-3  text-center lg:text-left">
+          <h1 className=" font-medium text-[30px] md:text-[3rem] lg:text-[48px] leading-[32px] md:leading-[56px] w-full py-3  text-center lg:text-left ">
             Apply for the 2023 Cohort
           </h1>
-          <p className="text-center lg:text-left max-w-[32.875rem] text-lg leading-6">
+          <p className="text-center lg:text-left max-w-[32.875rem] text-lg leading-6 ">
             Are you creating the next big thing that can take the giant Africa
             out of its negative balance of payment, enhance food security and
             even export to other countries?
@@ -35,12 +35,7 @@ const Cohort = () => {
             </button>
           </Link>
         </div>
-        {/* 
-        <div
-          className=" p-10 lg:p-20  border border-red-200 self-end"
-          // data-aos="fade-left"
-          // data-aos-duration="2500"
-        ></div> */}
+     
         <Image
           src="/images/man.svg"
           className="block"
@@ -49,7 +44,7 @@ const Cohort = () => {
           alt=""
         />
       </div>
-      <CohortForm />
+      <CohortForm /> 
       
       <div
         className={`flex flex-col md:flex-row lg:justify-between items-start xl:items-center mt-[17.938rem] px-[3rem] pb-[5.563rem]  bg-white pt-[5.563rem] `}
