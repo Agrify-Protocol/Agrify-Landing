@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 
 const BookACall = () => {
@@ -41,7 +42,7 @@ const BookACall = () => {
           alt=""
         />
       </div>
-      <div className="mt-[5rem] bg-gray-100 flex flex-col justify-center items-center gap-[1.5rem]">
+      <div className="mt-[5rem] bg-gray-100 flex flex-col justify-center items-center gap-[1.5rem] pb-[10rem]">
         <h1 className=" font-medium text-2xl leading-[32px] text-center">
           next step ; book a call
         </h1>
@@ -60,7 +61,7 @@ const BookACall = () => {
         </Link>
       </div>
 
-      <div
+      {/* <div
         className={`flex flex-col md:flex-row lg:justify-between items-start xl:items-center mt-[17.938rem] px-[3rem] pb-[5.563rem]  bg-white pt-[5.563rem] `}
       >
         <div className="mr-[5rem] flex flex-col xl:flex-row gap-3 items-start xl:items-center">
@@ -96,7 +97,9 @@ const BookACall = () => {
             Contact
           </a>
         </div>
-      </div>
+      </div> */}
+
+      <Footer  />
     </div>
   );
 };
