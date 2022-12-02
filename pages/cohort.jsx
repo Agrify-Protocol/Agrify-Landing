@@ -46,7 +46,7 @@ const Cohort = () => {
       </div>
       <CohortForm /> 
       
-      <div
+      {/* <div
         className={`flex flex-col md:flex-row lg:justify-between items-start xl:items-center mt-[17.938rem] px-[3rem] pb-[5.563rem]  bg-white pt-[5.563rem] `}
       >
         <div className="mr-[5rem] flex flex-col xl:flex-row gap-3 items-start xl:items-center">
@@ -82,7 +82,9 @@ const Cohort = () => {
             Contact
           </a>
         </div>
-      </div>
+      </div> */}
+
+      <Footer />
       
     </div>
   );
