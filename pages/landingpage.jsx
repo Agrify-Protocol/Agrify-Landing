@@ -1,10 +1,12 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable @next/next/no-img-element */
-import { useEffect, useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import Modal from '../components/Modal';
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Modal from "../components/Modal";
 const LandingPage = () => {
   const [show, setShow] = useState(false);
   useEffect(() => {
@@ -124,19 +126,19 @@ const LandingPage = () => {
           Invest in the Future of
         </h1>
         <div className="font-['Signifier'] font-medium text-[2rem] md:text-[4rem] leading-[2.5rem] md:leading-[4.5rem] text-center">
-          Agriculture
+          African Agriculture
         </div>
 
         <div className="mt-[2.5rem] text-center w-[43.813rem] ">
-          <p className="text-base md:text-[1.25rem] leading-[1.25rem] md:leading-[1.688rem] text-[#302F2D] font-normal max-w-[22.375rem] md:max-w-[43.813rem] my-0 mx-auto">
-            Discover & invest in top-tier innovative agribusinesses, digital
-            products,farming techniques and hardware.
+          <p className="text-base md:text-[1.25rem] leading-[1.25rem] md:leading-[1.688rem] text-[#302F2D] font-normal max-w-[22.375rem] md:max-w-[35.438rem] lg:max-w-[43.813rem] my-0 mx-auto">
+            Support African agriculture by discovering & trading unique
+            agricultural NFTs you can earn from.
           </p>
         </div>
 
         <Link href="#learn">
-          <button className="w-[12.25rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#0CC14C] mt-[3rem]">
-            <p className="text-white leading-6 font-medium ">Learn more</p>
+          <button className="w-[12.25rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#0CC14C] hover:bg-[#011308] mt-[3rem]">
+            <p className="text-white leading-6 font-medium hover:bg-[#011308] ">Learn more</p>
           </button>
         </Link>
       </div>
@@ -152,34 +154,43 @@ const LandingPage = () => {
       </div>
 
       <div className="mt-[10.188rem] flex flex-col items-center justify-center pl-[1.125rem] md:pl-0">
-        <h1 className="font-medium text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] text-center ">
-          Agriculture investing made{' '}
+        <h1 className="font-normal text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] md:text-center ">
+          Agriculture investing made{" "}
           <span className="font-['Signifier'] text-[2.313rem] md:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem]">
             simple
           </span>
         </h1>
 
-        <div className="mt-[1.5rem] text-base md:text-[1.25rem] lg:text-xl leading-5 md:leading-[1.688rem] text-[#302F2D] w-[22.25rem] md:w-auto text-center md:px-[2rem] lg:px-0">
+        <div className="mt-[1.5rem] text-base md:text-[1.125rem] lg:text-xl leading-5 md:leading-[1.5rem] lg:leading-[1.688rem] text-[#302F2D] max-w-[22.25rem] md:max-w-[33.313rem] lg:max-w-[49.313rem] md:w-auto  md:px-[2rem] lg:px-0">
           <div>
             <p>
-              As global food demand and use of sophisticated technology in
-              agriculture continues to rise, Agrify is here to give you access
-              to the unprecedented growth opportunity in the agriculture
+              With 65% of the world's arable land and a consistently increasing
+              population, Africa has the capacity to feed both itself and the
+              rest of the world.
             </p>
-            <p>sector, so you too can get in on the action.</p>
+            <p className="mt-[1.5rem]">
+              Institutional investors have taken notice of this huge opportunity
+              and have invested a large amount ;$103 billion so far in the
+              African agriculture sector over the past seven years. Most of
+              these deals are negotiated behind closed networks with a lot of
+              political wrangling, leaving the large growth drivers in small to
+              medium sized firms behind.
+            </p>
           </div>
-          <div className="mt-[1.5rem]">
+          <div className="mt-[2rem]">
             <p>
               Using distributed ledger technology, we have created a new way for
               agricultural innovators to gain access to funding from backers all
-              over the world, doing away with the politics of funding
+              over the world, doing away with the politics of funding and making
+              it more straightforward and merit based. Agrify is here to give
+              you access to the unprecedented growth opportunity in the
+              agriculture sector, so you too can get in on the action.
             </p>
-            <p>and making it more straight forward and merit based.</p>
           </div>
         </div>
 
         <h1 className="font-medium text-2xl md-[1.688rem] lg:text-[2.313rem] leading-8 md:leading-[2.813rem] text-[#595C63] mt-[3rem] text-center">
-          Diversify your portfolio and earn more from{' '}
+          Diversify your portfolio and earn more from{" "}
           <span className="text-[#0CC14C]">new markets</span>
         </h1>
       </div>
@@ -222,7 +233,7 @@ const LandingPage = () => {
         id="learn"
       >
         <Link href="/cohort">
-          <div className="bg-[#C1E701]  rounded-[32px] shadow-sm p-[2.375rem]  cursor-pointer max-w-[38rem] md:max-w-[50%]">
+          <div className="bg-[#C1E701]  rounded-[32px] shadow-sm p-[2.375rem]  cursor-pointer max-w-[38rem] md:max-w-[50%] hover:scale-105 transition-all duration-1000">
             <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[auto] text-center md:text-left ">
               Apply for the next Cohort
             </h1>
@@ -239,7 +250,7 @@ const LandingPage = () => {
             <p className="text-[#000] text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] ">
               Are you creating the next big thing that can take the giant Africa
               out of its negative balance of payment, enhance food security and
-              even export to other countries?{' '}
+              even export to other countries?{" "}
             </p>
             <div className="flex  items-center gap-2 mt-[3rem] w-fit">
               <p>Learn More</p>
@@ -256,7 +267,7 @@ const LandingPage = () => {
         </Link>
 
         <div
-          className="bg-[#8B4DED] rounded-[32px] shadow-sm p-[2.375rem] text-white cursor-pointer max-w-[38rem] md:max-w-[50%]"
+          className="bg-[#8B4DED] rounded-[32px] shadow-sm p-[2.375rem] text-white cursor-pointer max-w-[38rem] md:max-w-[50%] hover:scale-105 transition-all duration-1000"
           onClick={() => setShow(true)}
         >
           <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#fff] w-full md:w-[auto] text-center md:text-left ">
@@ -292,7 +303,7 @@ const LandingPage = () => {
 
       <Modal show={show} onClose={() => setShow(false)} />
 
-      <div className="mt-[10rem] flex flex-col items-center">
+      <div className="mt-[10rem] flex flex-col items-center pb-[18.75rem]">
         <h1 className="font-semibold text-[2rem] md:text-[2.5rem] lg:text-5xl leading-[3rem] md:leading-[3.5rem] w-[22.375rem] md:w-[53.25rem] text-center ">
           Democratizing Agriculture through Blockchain Technology
         </h1>
@@ -309,7 +320,7 @@ const LandingPage = () => {
         </Link>
       </div>
 
-      <div className="mt-[10rem] flex flex-col items-center">
+      {/* <div className="mt-[10rem] flex flex-col items-center">
         <h1 className="font-semibold text-[2rem] md:text-[2.5rem] leading-[2.5rem] md:leading-[3rem]  text-center">
           FAQs
         </h1>
@@ -358,7 +369,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

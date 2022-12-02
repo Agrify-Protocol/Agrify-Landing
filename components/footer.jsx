@@ -18,17 +18,17 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row  w-[17.938rem] ">
           <div className="flex flex-col gap-2">
             <h4 className="font-semibold py-2 text-[#0CC14C]">Product</h4>
-            <Link
+            <a
               href="https://marketplace.agrifyafrica.xyz/"
               target="_blank"
               rel="noreferrer"
             >
               <p className="py-2 hover:text-ag-green cursor-pointer">Invest</p>
-            </Link>
-            <Link href="/suppliers">
+            </a>
+            <Link href="/cohort">
               <p className="py-2 hover:text-ag-green cursor-pointer">Cohort</p>
             </Link>
-            <Link href="/suppliers">
+            <Link href="#learn">
               <p className="py-2 hover:text-ag-green cursor-pointer">Learn</p>
             </Link>
           </div>
