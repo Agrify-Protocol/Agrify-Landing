@@ -6,17 +6,38 @@ const Waitlist = () => {
   return (
     <div className="">
       <Navbar isBlack={true} isTransparent />
-      <div className="flex flex-col md:flex-row gap-[5rem] md:gap-0 ">
-        <div className="w-[100%] md:w-[50%] h-[18.75rem] md:h-full">
+      <div className="flex flex-col lg:flex-row">
+        <div className="w-[100%] lg:w-[50%] h-[18.75rem]">
           <div className="relative">
-            <img src="/images/side-image.svg" alt="" height="100%" />
+            <picture>
+              <source
+                type="image/svg+xml"
+                media="(max-width: 600px)"
+                srcset="/images/side-image-sm.svg"
+              />
+              <source
+                type="image/svg+xml"
+                media="(max-width: 1024px)"
+                srcset="/images/side-image-md.svg"
+              />
+              <source
+                type="image/svg+xml"
+                media="(min-width: 1024px)"
+                srcset="/images/side-image-lg.svg"
+              />
+              <img
+                src="/images/side-image-sm.svg"
+                alt="regular pyramid built from four equilateral triangles"
+              />
+            </picture>
+            {/* <img src="/images/side-image-lg.svg" alt="" height="100%" /> */}
           </div>
-          <h1 className=" absolute top-[10.938rem] font-semibold text-[1.688rem]  md:text-5xl leading-[2.5rem] leading-[3.5rem] text-[#595C63] text-center max-w-[37.375rem] px-[1rem] md:px-0">
+          <h1 className=" absolute top-[10.938rem] md:top-[5.938rem] lg:top-[12.538rem] font-semibold md:left-32 lg:left-14 text-[1.688rem]  md:text-5xl leading-[2.5rem] leading-[3.5rem] text-[#595C63] text-center max-w-[33.375rem] px-[1rem] md:px-0">
             Join our waitlist to be a part of a new Africa{' '}
           </h1>
         </div>
-        <div className="w-[100%] md:w-[50%] md:pl-[3rem]">
-          <div className="mt-[11rem]  pb-[9.438rem] ">
+        <div className="w-[100%] md:w-[50%] md:pl-[8rem]">
+          <div className="mt-[16rem] md:mt-[11rem]  pb-[9.438rem] ">
             <h1 className="font-medium text-center text-xl leading-6 text-[#59C43A]">
               Waitlist
             </h1>
