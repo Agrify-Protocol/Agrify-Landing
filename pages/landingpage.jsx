@@ -136,7 +136,7 @@ const LandingPage = () => {
           </p>
         </div>
 
-        <Link href="#learn">
+        <Link href="#learn-more">
           <button className="w-[12.25rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#0CC14C] hover:bg-[#011308] mt-[3rem]">
             <p className="text-white leading-6 font-medium hover:bg-[#011308] ">Learn more</p>
           </button>
@@ -153,7 +153,11 @@ const LandingPage = () => {
         />
       </div>
 
-      <div className="mt-[10.188rem] flex flex-col items-center justify-center pl-[1.125rem] md:pl-0">
+      <div id="learn-more">
+
+      </div>
+
+      <div className="mt-[10.188rem] flex flex-col items-center justify-center pl-[1.125rem] md:pl-0" >
         <h1 className="font-normal text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] md:text-center ">
           Agriculture investing made{" "}
           <span className="font-['Signifier'] text-[2.313rem] md:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem]">
