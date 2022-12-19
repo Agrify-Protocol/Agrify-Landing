@@ -1,12 +1,12 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import Navbar from '../components/navbar';
+import Image from "next/image";
+import Link from "next/link";
+import Navbar from "../components/navbar";
 
 const Waitlist = () => {
   return (
     <div className="">
       <Navbar isBlack={true} isTransparent />
-      <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col lg:flex-row overflow-y-hidden">
         <div className="w-[100%] lg:w-[50%] h-[18.75rem]">
           <div className="relative">
             <picture>
@@ -32,11 +32,11 @@ const Waitlist = () => {
             </picture>
             {/* <img src="/images/side-image-lg.svg" alt="" height="100%" /> */}
           </div>
-          <h1 className=" absolute top-[10.938rem] md:top-[5.938rem] lg:top-[12.538rem] font-semibold md:left-32 lg:left-14 text-[1.688rem]  md:text-5xl leading-[2.5rem] leading-[3.5rem] text-[#595C63] text-center max-w-[33.375rem] px-[1rem] md:px-0">
-            Join our waitlist to be a part of a new Africa{' '}
+          <h1 className=" absolute top-[10.938rem] md:top-[5.938rem] lg:top-[12.538rem] font-semibold md:left-32 lg:left-14 text-[1.688rem]  md:text-5xl leading-[2.5rem] md:leading-[3.5rem] text-[#595C63] text-center max-w-[33.375rem] px-[1rem] md:px-0">
+            Join our waitlist to be a part of a new Africa{" "}
           </h1>
         </div>
-        <div className="w-[100%] md:w-[50%] md:pl-[8rem]">
+        <div className="w-[100%] md:w-[50%] md:pl-[5rem]">
           <div className="mt-[16rem] md:mt-[11rem]  pb-[9.438rem] ">
             <h1 className="font-medium text-center text-xl leading-6 text-[#59C43A]">
               Waitlist

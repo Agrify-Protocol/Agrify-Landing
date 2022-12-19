@@ -5,14 +5,16 @@ const Footer = () => {
   return (
     <>
       <div className=" flex flex-col md:flex-row justify-between  bg-white mt-14 pl-[1rem] lg:p-[5rem] items-start gap-4 py-[4rem]">
-        <Link href='/' className="cursor-pointer">
-          <Image
-            width={127}
-            height={45.03}
-            src="/images/logo.svg"
-            alt="logo"
-            className="cursor-pointer"
-          />
+        <Link href="/" className="cursor-pointer">
+          <a>
+            <Image
+              width={127}
+              height={45.03}
+              src="/images/logo.svg"
+              alt="logo"
+              className="cursor-pointer"
+            />
+          </a>
         </Link>
 
         <div className="flex flex-col md:flex-row  w-[17.938rem] ">
@@ -28,9 +30,9 @@ const Footer = () => {
             <Link href="/cohort">
               <p className="py-2 hover:text-ag-green cursor-pointer">Cohort</p>
             </Link>
-            <Link href="#learn">
+            <a href="#learn">
               <p className="py-2 hover:text-ag-green cursor-pointer">Learn</p>
-            </Link>
+            </a>
           </div>
           <div className="flex flex-col gap-2">
             <h4 className="font-semibold py-2 text-[#0CC14C]">Connect</h4>
