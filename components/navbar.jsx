@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react"; 
 //Components
 import NavMoreDropdown from "./NavMoreDropdown";
 import { BsThreeDots } from "react-icons/bs";
@@ -62,29 +62,10 @@ const Navbar = ({
 
   return (
     <>
-      {/* <nav
-          className={`${isSticky()} bg-white ${
-            isTransparent ? 'lg:bg-transparent' : ''
-          }`}
-        > */}
       <nav
         className={`${isSticky()}  ${isTransparent ? "lg:bg-transparent" : ""}`}
       >
         <Link href="/">
-          {/* <a>
-              <img
-                className={"w-[8.5rem]" + (sticky ? " hidden" : " ")}
-                alt='logo'
-                src={
-                  isBlack ? "/images/logo-black.svg" : "/images/logo-white.svg"
-                }
-              />
-              <img
-                className={"w-[6.5rem]" + (sticky ? " " : " hidden")}
-                alt='logo'
-                src='/images/logo.svg'
-              />
-            </a> */}
           <Image
             priority
             src="/images/logo-nav.svg"

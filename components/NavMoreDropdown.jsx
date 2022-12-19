@@ -1,35 +1,37 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 //Components
-import { VscChromeClose } from 'react-icons/vsc';
+import { VscChromeClose } from "react-icons/vsc";
+
 
 const NavMoreDropdown = ({ moreToggle, setMoreToggle }) => {
   return (
     <div
       className={
-        'duration-500 flex flex-col justify-between fixed left-0 top-0 w-screen h-screen z-[10000] p-14 ' +
+        "duration-500 flex flex-col justify-between items-center fixed left-0 top-0 w-screen h-screen z-[10000] py-[1.5rem] px-[2.5rem] md:py-[3rem] md:px-[5rem] " +
         (moreToggle
-          ? 'pointer-events-auto bg-white left-[0]'
-          : 'pointer-events-none bg-white/0 left-[-100vw]')
+          ? "pointer-events-auto bg-white left-[0]"
+          : "pointer-events-none bg-white/0 left-[-100vw]")
       }
     >
-      <div className="w-full right-[30px] top-[30px] flex items-end justify-between">
-        <Link href="/">
+      <div className="w-full right-[30px] top-[30px] flex justify-between  items-center">
+        <Link href="/" className="inline-block">
           <a>
             <img className="w-[8.5rem]" alt="logo" src="/images/logo.svg" />
           </a>
         </Link>
 
-        <div className="flex items-center">
+        <div className="justify-self-end w-fit ">
           <VscChromeClose
             onClick={() => setMoreToggle(false)}
-            className="cursor-pointer"
+            className="cursor-pointer justify-self-end  "
             size={28}
           />
-        </div>
+        </div> 
+        
       </div>
       <div className="rounded-[1.2rem] flex flex-col items-left border-box gap-[2.5rem] ">
-        <div>
+        <div className="">
           <div>
             <a
               href="https://marketplace.agrifyafrica.xyz/"
@@ -47,7 +49,9 @@ const NavMoreDropdown = ({ moreToggle, setMoreToggle }) => {
             </Link>
             <h1 className="text-[40px] w-fit text-slate-300 py-1">Learn</h1>
           </div>
-          <div className="flex gap-4 mt-12 text-[#666666]">
+          
+        </div>
+        <div className="flex gap-[1rem] w-fit mt-12 text-[#666666]">
             <a
               href=" https://twitter.com/agrifyafrica"
               target="_blank"
@@ -73,7 +77,6 @@ const NavMoreDropdown = ({ moreToggle, setMoreToggle }) => {
               telegram
             </a>
           </div>
-        </div>
       </div>
     </div>
   );
