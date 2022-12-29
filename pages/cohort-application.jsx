@@ -3,12 +3,13 @@ import Link from 'next/link';
 
 import Router from 'next/router';
 import React from 'react';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { getCurrentDate } from '../components/date';
 import { UploadFile } from '../utils/file-upload';
 // import UploadFile from './uploadfile';
 
 const CohortForm = () => {
+  const fileUploadRef = useRef(null);
   const inputStyles =
     'mt-1 block w-full md:w-[29.75rem] px-3 py-3 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none invalid:border-red-500 invalid:text-red-600 focus:invalid:border-red-500 focus:invalid:ring-red-500 ';
 
@@ -18,8 +19,8 @@ const CohortForm = () => {
   const [category, setCategory] = useState(' ');
   const [location, setLocation] = useState(' ');
   const [upload, setUpload] = useState(null);
-  var currentDate;
-  var fileURL;
+  // var currentDate;
+  // var fileURL;
 
   const marketOptions = [
     { id: 1, option: 'Fruits', disabled: false },
@@ -58,16 +59,12 @@ const CohortForm = () => {
     setUpload(e.target.files[0]);
   };
 
-  const handleDate = () => {
-    currentDate = getCurrentDate();
-  };
-
   const handleForm = async (e) => {
-    fileURL = await UploadFile(upload);
+    const fileURL = upload ? await UploadFile(upload) : '';
     console.log('uploadResponse', fileURL);
 
     const form = {
-      currentDate,
+      currentDate: getCurrentDate(),
       firstName,
       lastName,
       email,
@@ -85,10 +82,10 @@ const CohortForm = () => {
       body: JSON.stringify(form),
     });
 
-    const content = await response.json();
-    if (response.status == 200) {
-      console.log('success');
-    }
+    // const content = await response.json();
+    // if (response.status == 200) {
+    //   console.log('success');
+    // }
 
     setFirstName(' ');
     setLastName(' ');
@@ -101,10 +98,9 @@ const CohortForm = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    handleDate();
-    const isSuccesful = handleForm(e);
+    const isSuccesful = await handleForm(e);
     if (isSuccesful) {
       Router.push('/book-a-call');
     }
@@ -117,6 +113,13 @@ const CohortForm = () => {
           Please Fill out the required information
           <span className="text-[#EC1B1B]">*</span>
         </h1>
+        <input
+          type="file"
+          onChange={(e) => handleFileUpload(e)}
+          required
+          className="hidden"
+          ref={fileUploadRef}
+        />
         <form
           method="POST"
           accept-charset="UTF-8"
@@ -185,6 +188,7 @@ const CohortForm = () => {
             value={category}
             type="text"
             className={inputStyles}
+            required
           >
             <option defaultValue={true}>Select Your Option</option>
             {marketOptions.map((option) => {
@@ -244,19 +248,22 @@ const CohortForm = () => {
               />
             </div>
 
-            <p className="font-medium text-lg leading-6 text-[#0CC14C]">
+            <p
+              className="font-medium text-lg leading-6 text-[#0CC14C]"
+              onClick={() => fileUploadRef.current.click()}
+            >
               Upload export certificates
             </p>
           </div>
 
-          <Link href="/book-a-call">
-            <button
-              type="submit"
-              className="bg-ag-green h-[3rem] rounded-[3rem] text-white mt-9 w-[11.5rem]"
-            >
-              Submit Application
-            </button>
-          </Link>
+          {/* <Link href="/book-a-call"> */}
+          <button
+            type="submit"
+            className="bg-ag-green h-[3rem] rounded-[3rem] text-white mt-9 w-[11.5rem]"
+          >
+            Submit Application
+          </button>
+          {/* </Link> */}
         </form>
       </div>
     </div>
