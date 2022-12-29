@@ -1,8 +1,33 @@
-import Image from "next/image";
-import Link from "next/link";
-import Navbar from "../components/navbar";
+import { useState } from 'react';
+import { useRouter } from 'next/router';
+import Image from 'next/image';
+import Link from 'next/link';
+import Navbar from '../components/navbar';
 
 const Waitlist = () => {
+  const router = useRouter();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const handleSubmit = async (ev) => {
+    setIsSubmitting(true);
+    ev.preventDefault();
+    const formData = new FormData(ev.target);
+    console.log();
+    const response = await fetch('/api/waitlist', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(Object.fromEntries(formData)),
+    });
+
+    if (response.status == 200) {
+      ev.target.reset();
+      setIsSubmitting(false);
+      router.push('/waitlist-success');
+    }
+  };
+
   return (
     <div className="">
       <Navbar isBlack={true} isTransparent />
@@ -33,7 +58,7 @@ const Waitlist = () => {
             {/* <img src="/images/side-image-lg.svg" alt="" height="100%" /> */}
           </div>
           <h1 className=" absolute top-[10.938rem] md:top-[5.938rem] lg:top-[12.538rem] font-semibold md:left-32 lg:left-14 text-[1.688rem]  md:text-5xl leading-[2.5rem] md:leading-[3.5rem] text-[#595C63] text-center max-w-[33.375rem] px-[1rem] md:px-0">
-            Join our waitlist to be a part of a new Africa{" "}
+            Join our waitlist to be a part of a new Africa{' '}
           </h1>
         </div>
         <div className="w-[100%] md:w-[50%] md:pl-[5rem]">
@@ -41,7 +66,10 @@ const Waitlist = () => {
             <h1 className="font-medium text-center text-xl leading-6 text-[#59C43A]">
               Waitlist
             </h1>
-            <form className=" flex flex-col gap-4 mt-4 px-[1.688rem] md:px-0 w-[100%] md:w-[34.75rem]">
+            <form
+              onSubmit={handleSubmit}
+              className=" flex flex-col gap-4 mt-4 px-[1.688rem] md:px-0 w-[100%] md:w-[34.75rem]"
+            >
               <label
                 htmlFor="firstName"
                 className="font-medium text-lg leading-8"
@@ -51,6 +79,8 @@ const Waitlist = () => {
               <input
                 type="text"
                 className={` bg-white outline-none block w-[100%] p-3 rounded-[13px]`}
+                name="fullName"
+                required
               />
               <label htmlFor="email" className="font-medium text-lg leading-8">
                 Email Address <span className="text-[#EC1B1B]">*</span>
@@ -58,7 +88,9 @@ const Waitlist = () => {
               <input
                 type="email"
                 className={` bg-white outline-none  p-3 rounded-[13px]`}
+                name="email"
                 id="email"
+                required
               />
               <label
                 htmlFor="password"
@@ -69,17 +101,22 @@ const Waitlist = () => {
               <input
                 type="text"
                 className={` bg-white outline-none p-3 rounded-[13px]`}
+                name="location"
                 id="password"
+                required
               />
-              <Link href="/waitlist-success">
-                <a>
-                  <button className=" h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#0CC14C] mt-[3rem]">
-                    <p className="text-white leading-6 font-medium ">
-                      Join Waitlist
-                    </p>
-                  </button>
-                </a>
-              </Link>
+              {/* <Link href="/waitlist-success">
+                <a> */}
+              <button
+                className=" h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#0CC14C] mt-[3rem]"
+                disabled={isSubmitting}
+              >
+                <p className="text-white leading-6 font-medium ">
+                  Join Waitlist
+                </p>
+              </button>
+              {/* </a>
+              </Link> */}
             </form>
           </div>
         </div>
