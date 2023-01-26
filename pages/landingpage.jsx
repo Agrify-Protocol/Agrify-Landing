@@ -18,7 +18,7 @@ const LandingPage = () => {
     <div className="bg-gray-100 mt-[15rem] h-full my-0 mx-auto">
       <div className="flex flex-col items-center justify-center">
         <h1 className="font-medium text-[2rem] md:text-[4rem] leading-[2.5rem] md:leading-[4.5rem] text-center ">
-          Invest in the Future of
+          Welcome to the Future of
         </h1>
         <div className="font-['Signifier'] font-medium text-[2rem] md:text-[4rem] leading-[2.5rem] md:leading-[4.5rem] text-center">
           African Agriculture
@@ -31,9 +31,9 @@ const LandingPage = () => {
           </p>
         </div>
 
-        <Link href="#learn-more">
-          <button className="w-[12.25rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[3rem] bg-[#0CC14C] hover:bg-[#011308] mt-[3rem]">
-            <p className="text-white leading-6 font-medium hover:bg-[#011308] ">Learn more</p>
+        <Link href="">
+          <button className="w-[12.25rem] h-[4rem] rounded-[32px] py-[rem] px-[3rem] bg-[#0CC14C] hover:bg-[#011308] mt-[3rem]">
+            <p className="text-white leading-6 font-medium hover:bg-[#011308] ">Go to marketplace</p>
           </button>
         </Link>
       </div>
@@ -54,9 +54,9 @@ const LandingPage = () => {
 
       <div className="mt-[10.188rem] flex flex-col items-center justify-center pl-[1.125rem] md:pl-0" >
         <h1 className="font-normal text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] md:text-center ">
-          Agriculture investing made{" "}
+          Agriculture can save Africa from {" "}
           <span className="font-['Signifier'] text-[2.313rem] md:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem]">
-            simple
+            poverty
           </span>
         </h1>
 
@@ -132,9 +132,9 @@ const LandingPage = () => {
         id="learn"
       >
         <Link href="/cohort">
-          <div className="bg-[#C1E701]  rounded-[32px] shadow-sm p-[2.375rem]  cursor-pointer max-w-[38rem] md:max-w-[50%] hover:scale-105 transition-all duration-1000">
+          <div className="bg-[#C1E701]  rounded-[32px] shadow-sm p-[2.375rem]  cursor-pointer max-w-[38rem] md:max-w-[50%] hover:scale-105 transition-all duration-1000 flex flex-col gap-4">
             <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[auto] text-center md:text-left ">
-              Apply for the next Cohort
+              Join Agrify as an  exporter
             </h1>
             <div className="flex justify-center py-[3rem]">
               <Image
@@ -147,9 +147,7 @@ const LandingPage = () => {
               />
             </div>
             <p className="text-[#000] text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] ">
-              Are you creating the next big thing that can take the giant Africa
-              out of its negative balance of payment, enhance food security and
-              even export to other countries?{" "}
+              Are you an agric exporter with a vision to sell your produce across the world and take Africa out of its negative balance of payment?{" "}
             </p>
             <div className="flex  items-center gap-2 mt-[3rem] w-fit">
               <p>Learn More</p>
@@ -166,7 +164,7 @@ const LandingPage = () => {
         </Link>
 
         <div
-          className="bg-[#8B4DED] rounded-[32px] shadow-sm p-[2.375rem] text-white cursor-pointer max-w-[38rem] md:max-w-[50%] hover:scale-105 transition-all duration-1000"
+          className="bg-[#8B4DED] rounded-[32px] shadow-sm p-[2.375rem] text-white cursor-pointer max-w-[38rem] md:max-w-[50%] hover:scale-105 transition-all duration-1000 flex flex-col gap-4"
           onClick={() => setShow(true)}
         >
           <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#fff] w-full md:w-[auto] text-center md:text-left ">

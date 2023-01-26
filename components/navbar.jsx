@@ -76,7 +76,7 @@ const Navbar = ({
           />
         </Link>
         <div className="flex items-center justify-end  gap-6">
-          {showWaitlistBtn && (
+          {/* {showWaitlistBtn && (
             <Link href="/waitlist">
               <button className="hidden md:block w-[10.688rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[2rem] bg-[#011308] mt-[2rem] hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C]">
                 <p className="text-white leading-6 font-medium ">
@@ -84,7 +84,7 @@ const Navbar = ({
                 </p>
               </button>
             </Link>
-          )}
+          )} */}
 
           <div
             onClick={() => setMoreToggle(!moreToggle)}
