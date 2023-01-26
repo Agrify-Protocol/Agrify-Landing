@@ -31,11 +31,17 @@ const LandingPage = () => {
           </p>
         </div>
 
-        <Link href="">
+        <a
+          href="https://marketplace.agrifyafrica.xyz/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <button className="w-[12.25rem] h-[4rem] rounded-[32px] py-[rem] px-[3rem] bg-[#0CC14C] hover:bg-[#011308] mt-[3rem]">
-            <p className="text-white leading-6 font-medium hover:bg-[#011308] ">Go to marketplace</p>
+            <p className="text-white leading-6 font-medium hover:bg-[#011308] ">
+              Go to marketplace
+            </p>
           </button>
-        </Link>
+        </a>
       </div>
       <div className="mt-[5rem]">
         <Image
@@ -48,13 +54,11 @@ const LandingPage = () => {
         />
       </div>
 
-      <div id="learn-more">
+      <div id="learn-more"></div>
 
-      </div>
-
-      <div className="mt-[10.188rem] flex flex-col items-center justify-center pl-[1.125rem] md:pl-0" >
+      <div className="mt-[10.188rem] flex flex-col items-center justify-center pl-[1.125rem] md:pl-0">
         <h1 className="font-normal text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] md:text-center ">
-          Agriculture can save Africa from {" "}
+          Agriculture can save Africa from{" "}
           <span className="font-['Signifier'] text-[2.313rem] md:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem]">
             poverty
           </span>
@@ -134,7 +138,7 @@ const LandingPage = () => {
         <Link href="/cohort">
           <div className="bg-[#C1E701]  rounded-[32px] shadow-sm p-[2.375rem]  cursor-pointer max-w-[38rem] md:max-w-[50%] hover:scale-105 transition-all duration-1000 flex flex-col gap-4">
             <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[auto] text-center md:text-left ">
-              Join Agrify as an  exporter
+              Join Agrify as an exporter
             </h1>
             <div className="flex justify-center py-[3rem]">
               <Image
@@ -147,7 +151,9 @@ const LandingPage = () => {
               />
             </div>
             <p className="text-[#000] text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] ">
-              Are you an agric exporter with a vision to sell your produce across the world and take Africa out of its negative balance of payment?{" "}
+              Are you an agric exporter with a vision to sell your produce
+              across the world and take Africa out of its negative balance of
+              payment?{" "}
             </p>
             <div className="flex  items-center gap-2 mt-[3rem] w-fit">
               <p>Learn More</p>
