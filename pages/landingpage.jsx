@@ -31,17 +31,19 @@ const LandingPage = () => {
           </p>
         </div>
 
-        <a
-          href="https://marketplace.agrifyafrica.xyz/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="w-[12.25rem] h-[4rem] rounded-[32px] py-[rem] px-[3rem] bg-[#0CC14C] hover:bg-[#011308] mt-[3rem]">
-            <p className="text-white leading-6 font-medium hover:bg-[#011308] ">
-              Go to marketplace
-            </p>
-          </button>
-        </a>
+        <div className=" w-fit">
+          <a
+            href="https://marketplace.agrifyafrica.xyz/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="w-[12.25rem] h-[4rem] rounded-[32px] py-[rem] px-[3rem] bg-[#0CC14C] hover:bg-[#011308] mt-[3rem]">
+              <p className="text-white leading-6 font-medium hover:bg-[#011308] ">
+                Go to marketplace
+              </p>
+            </button>
+          </a>
+        </div>
       </div>
       <div className="mt-[5rem]">
         <Image
