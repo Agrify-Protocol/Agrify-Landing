@@ -89,10 +89,18 @@ const Navbar = ({
 
           <div
             onClick={() => setMoreToggle(!moreToggle)}
-            className="lg:block cursor-pointer w-fit"
+            className="lg:block cursor-pointer w-fit border border-red-700"
           >
             
-            <Icon icon="charm:menu-meatball" width="40" height="40" />
+            {/* <Icon icon="charm:menu-meatball" width="40" height="40" /> */}
+            <Image
+            priority
+            src="/images/kebab.svg"
+            className=""
+            height={48}
+            width={48}
+            alt="logo"
+          />
           </div>
         </div>
       </nav>
