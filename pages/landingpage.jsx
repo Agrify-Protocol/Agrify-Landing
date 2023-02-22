@@ -16,7 +16,7 @@ const LandingPage = () => {
 
   return (
     <div className="bg-gray-100 mt-[15rem] h-full my-0 mx-auto">
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center px-[0.7rem]">
         <h1 className="font-medium text-[2rem] md:text-[4rem] leading-[2.5rem] md:leading-[4.5rem] text-center ">
           Welcome to the Future of
         </h1>

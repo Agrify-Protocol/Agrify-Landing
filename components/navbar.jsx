@@ -3,7 +3,8 @@ import Link from "next/link";
 import { useEffect, useState, useRef } from "react"; 
 //Components
 import NavMoreDropdown from "./NavMoreDropdown";
-import { BsThreeDots } from "react-icons/bs";
+
+import { Icon } from '@iconify/react';
 
 const Navbar = ({
   isBlack,
@@ -90,7 +91,8 @@ const Navbar = ({
             onClick={() => setMoreToggle(!moreToggle)}
             className="lg:block cursor-pointer w-fit"
           >
-            <BsThreeDots className="text-black" size={32} />
+            
+            <Icon icon="charm:menu-meatball" width="40" height="40" />
           </div>
         </div>
       </nav>
