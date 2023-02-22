@@ -66,7 +66,7 @@ const LandingPage = () => {
           </span>
         </h1>
 
-        <div className="mt-[1.5rem] text-base md:text-[1.125rem] lg:text-xl leading-5 md:leading-[1.5rem] lg:leading-[1.688rem] text-[#302F2D] max-w-[22.25rem] md:max-w-[33.313rem] lg:max-w-[49.313rem] md:w-auto  md:px-[2rem] lg:px-0">
+        <div className="mt-[1.5rem] text-base md:text-[1.125rem] lg:text-xl leading-5 md:leading-[1.5rem] lg:leading-[1.688rem] text-[#302F2D] max-w-[22.25rem] md:max-w-[33.313rem] lg:max-w-[49.313rem] md:w-auto  md:px-[2rem] lg:px-0 ">
           <div>
             <p>
               With 65% of the world's arable land and a consistently increasing
