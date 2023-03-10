@@ -4,8 +4,6 @@ import { useEffect, useState, useRef } from "react";
 //Components
 import NavMoreDropdown from "./NavMoreDropdown";
 
-import { Icon } from '@iconify/react';
-
 const Navbar = ({
   isBlack,
   showWaitlistBtn = false,
@@ -77,22 +75,12 @@ const Navbar = ({
           />
         </Link>
         <div className="flex items-center justify-end  gap-6">
-          {/* {showWaitlistBtn && (
-            <Link href="/waitlist">
-              <button className="hidden md:block w-[10.688rem] h-[3.5rem] rounded-[32px] py-[1rem] px-[2rem] bg-[#011308] mt-[2rem] hover:text-white hover:border-[#0CC14C] hover:bg-[#0CC14C]">
-                <p className="text-white leading-6 font-medium ">
-                  Join Waitlist
-                </p>
-              </button>
-            </Link>
-          )} */}
+         
 
           <div
             onClick={() => setMoreToggle(!moreToggle)}
             className="lg:block cursor-pointer w-fit border border-red-700"
           >
-            
-            {/* <Icon icon="charm:menu-meatball" width="40" height="40" /> */}
             <Image
             priority
             src="/images/kebab.svg"

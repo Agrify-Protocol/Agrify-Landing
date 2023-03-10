@@ -19,23 +19,23 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row  w-[17.938rem] ">
           <div className="flex flex-col gap-2">
-            <h4 className="font-semibold py-2 text-[#0CC14C]">Product</h4>
+            <h4 className="font-semibold py-2 text-[#999999]">Product</h4>
             <a
               href="https://marketplace.agrifyafrica.xyz/"
               target="_blank"
               rel="noreferrer"
             >
-              <p className="py-2 hover:text-ag-green cursor-pointer">Invest</p>
+              <p className="py-2 hover:text-ag-green cursor-pointer">Marketplace</p>
             </a>
             <Link href="/cohort">
-              <p className="py-2 hover:text-ag-green cursor-pointer">Cohort</p>
+              <p className="py-2 text-slate-300 ">Invest</p>
             </Link>
-            <a href="#learn">
-              <p className="py-2 hover:text-ag-green cursor-pointer">Learn</p>
+            <a href="">
+              <p className="py-2 text-slate-300">Faq</p>
             </a>
           </div>
           <div className="flex flex-col gap-2">
-            <h4 className="font-semibold py-2 text-[#0CC14C]">Connect</h4>
+            <h4 className="font-semibold py-2 text-[#999999]">Connect</h4>
             <a
               href="https://t.me/+LzukavSm-9MxY2Y8"
               target="_blank"
@@ -60,12 +60,12 @@ const Footer = () => {
             >
               instagram
             </a>
-            <a
+            {/* <a
               href="mailto:contactagrify@gmail.com"
               className="hover:text-ag-green "
             >
               email
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
