@@ -3,7 +3,6 @@ import Link from "next/link";
 //Components
 import { VscChromeClose } from "react-icons/vsc";
 
-
 const NavMoreDropdown = ({ moreToggle, setMoreToggle }) => {
   return (
     <div
@@ -27,8 +26,7 @@ const NavMoreDropdown = ({ moreToggle, setMoreToggle }) => {
             className="cursor-pointer justify-self-end  "
             size={28}
           />
-        </div> 
-        
+        </div>
       </div>
       <div className="rounded-[1.2rem] flex flex-col items-left border-box gap-[2.5rem] ">
         <div className="">
@@ -43,40 +41,43 @@ const NavMoreDropdown = ({ moreToggle, setMoreToggle }) => {
               </h1>
             </a>
             <Link href="/cohort">
-              <h1 className="cursor-pointer w-fit text-[40px] py-1 hover:text-ag-green ">
-                Cohort
-              </h1>
+              <h1 className="text-[40px] w-fit text-slate-300 py-1">Invest</h1>
             </Link>
-            <h1 className="text-[40px] w-fit text-slate-300 py-1">Learn</h1>
+            <a
+              href="https://agrify-africa.medium.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <h1 className="cursor-pointer w-fit text-[40px] py-1 hover:text-ag-green">Learn</h1>
+            </a>
           </div>
-          
         </div>
         <div className="flex gap-[1rem] w-fit mt-12 text-[#666666]">
-            <a
-              href=" https://twitter.com/agrifyafrica"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-ag-green "
-            >
-              twitter
-            </a>
-            <a
-              href="https://www.instagram.com/agrifyafrica/"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-ag-green "
-            >
-              instagram
-            </a>
-            <a
-              href="https://t.me/+LzukavSm-9MxY2Y8"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-ag-green"
-            >
-              telegram
-            </a>
-          </div>
+          <a
+            href=" https://twitter.com/agrifyafrica"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-ag-green "
+          >
+            twitter
+          </a>
+          <a
+            href="https://www.instagram.com/agrifyafrica/"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-ag-green "
+          >
+            instagram
+          </a>
+          <a
+            href="https://t.me/+LzukavSm-9MxY2Y8"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-ag-green"
+          >
+            telegram
+          </a>
+        </div>
       </div>
     </div>
   );
