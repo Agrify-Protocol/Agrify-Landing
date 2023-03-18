@@ -46,43 +46,7 @@ const Cohort = () => {
       </div>
       <CohortForm /> 
       
-      {/* <div
-        className={`flex flex-col md:flex-row lg:justify-between items-start xl:items-center mt-[17.938rem] px-[3rem] pb-[5.563rem]  bg-white pt-[5.563rem] `}
-      >
-        <div className="mr-[5rem] flex flex-col xl:flex-row gap-3 items-start xl:items-center">
-          <span className="">
-            <Image
-              priority
-              src="/images/logo-large.svg"
-              className="shrink-0 block"
-              height={28.72}
-              width={81}
-              alt="logo"
-            />
-          </span>
-
-          <a className="font normal text-lg leading-6 text-[#666666] mt-[2rem] xl:mt-0  xl:ml-[2.5rem] hover:text-ag-green cursor-pointer">
-            Telegram
-          </a>
-          <a className="font normal text-lg leading-6 text-[#666666] hover:text-ag-green cursor-pointer">
-            Twitter
-          </a>
-          <a className="font normal text-lg leading-6 text-[#666666] hover:text-ag-green cursor-pointer">
-            Instagram
-          </a>
-        </div>
-        <div className="flex flex-col xl:flex-row gap-3 mt-[6rem] xl:mt-0">
-          <a className="font normal text-lg leading-6 text-[#666666] hover:text-ag-green cursor-pointer">
-            Terms of services
-          </a>
-          <a className="font normal text-lg leading-6 text-[#666666] hover:text-ag-green cursor-pointer">
-            Privacy policy
-          </a>
-          <a className="font normal text-lg leading-6 text-[#666666] hover:text-ag-green cursor-pointer">
-            Contact
-          </a>
-        </div>
-      </div> */}
+      
 
       <Footer />
       

@@ -43,66 +43,79 @@ const LandingPage = () => {
 
 			<div id='learn-more'></div>
 
-			<div className='mt-[10.188rem] flex flex-col items-center justify-center pl-[1.125rem] md:pl-0'>
-				<h1 className=' text-[#484848] font-normal text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] md:text-center '>
-					A Decentralized hub for
-				</h1>
-				<h1 className=' text-[#8F8F8F] font-normal text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] md:text-center '>
-					African Agriculture
-				</h1>
-				<div className='mt-[1.5rem] text-base md:text-[1.125rem] lg:text-xl leading-5 md:leading-[1.5rem] lg:leading-[1.688rem] text-[#302F2D] max-w-[22.25rem] md:max-w-[33.313rem] lg:max-w-[44.313rem] md:w-auto  md:px-[2rem] lg:px-0 text-center'>
-					<div>
-						<p>Many smallholder farmers, who account for 60% of the agricultural labor force, do not have access to local or even foreign markets.</p>
-						<p className='mt-[1.5rem]'>
-							Our mission, and goal is to strengthen every aspect of the agriculture supply chain , from farm to store to table. Building the soft
-							infrastructure required at any of these stages.
-						</p>
-					</div>
-					<div className='mt-[2rem]'>
-						<p>
-							We help farmers create autonomous organizations , so they can sell in large quantities and access sustainable credit. We help businesses
-							gain access to markets, and finance they need to grow. We have created a new way for agricultural innovators to gain access to funding
-							from backers all over the world, doing away with the politics of funding and making it more straightforward and merit based.
-						</p>
-					</div>
-				</div>
-			</div>
+      <div className="mt-[10.188rem] flex flex-col items-center justify-center pl-[1.125rem] md:pl-0">
+        <h1 className=" text-[#484848] font-normal text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] md:text-center ">
+          A Decentralized hub for
+        </h1>
+        <h1 className=" text-[#8F8F8F] font-normal text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] md:text-center ">
+          African Agriculture
+        </h1>
+        <div className="mt-[1.5rem] text-base md:text-[1.125rem] lg:text-xl leading-5 md:leading-[1.5rem] lg:leading-[1.688rem] text-[#302F2D] max-w-[22.25rem] md:max-w-[33.313rem] lg:max-w-[44.25rem] md:w-auto  md:px-[2rem] lg:px-0 text-center">
+          <div>
+            <p>
+              We are a modern agriculture technology company transforming the
+              agricultural sector. Our goal is to minimize the trade-offs
+              between food production quality, scale, inclusivity, and
+              sustainability by bundling everything a farmer needs to boost
+              yield and run a profitable farm.
+            </p>
+            <p className="mt-[2rem]">
+              With a community first approach, we help global business , as well
+              as Africans and its diaspora collectively source for food from the
+              best suppliers and farmers enabling them to browse, order , and
+              pay easily.
+            </p>
+          </div>
+        </div>
+      </div>
 
-			<div className='my-0 mx-auto mt-[4rem] md:mt-[9rem] gap-12 flex flex-col md:grid md:grid-cols-2 justify-between relative w-[90%]' id='learn'>
-				<Link href='/cohort'>
-					<div className='bg-[#fff] hover:shadow-lg hover:shadow-[#C0F000]/40 duration-500 rounded-[32px] shadow-sm p-[2.375rem] cursor-pointer items-center flex flex-col gap-4'>
-						<h1 className='font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[auto] text-center mt-6 '>
-							Export Marketplace
-						</h1>
-						{/* <div className="flex justify-center py-[3rem]">
+      <div
+        className="my-0 mx-auto mt-[4rem] md:mt-[9rem] md:mx-[4rem] flex flex-col gap-[3rem]  md:flex-row justify-between relative w-[90%]"
+        id="learn"
+      >
+        
+          <div className="bg-[#fff]   rounded-[32px] shadow-sm p-[2.375rem]  max-w-[38rem] md:max-w-[50%]  flex flex-col gap-4">
+            <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[auto] text-center  ">
+              Export Marketplace
+            </h1>
+
+            <p className="text-[#999999] text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] text-center max-w-[30.375rem]">
+              Trade easily with the best organic commercial farmers in Africa
+            </p>
+
+            <div className="flex  items-center gap-2 mt-[2rem] w-fit justify-center mx-auto my-0">
+              <a
+                href="https://marketplace.agrifyafrica.xyz/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p className="text-[#0CC14C]">Go to Marketplace</p>
+              </a>
               <Image
                 priority
-                src="/images/farmer.svg"
+                src="/images/go-marketplace.svg"
                 className=""
-                height={427.74}
-                width={295}
-                alt="apply for next cohort"
+                height={9.55}
+                width={16.95}
+                alt=""
               />
-            </div> */}
-						<p className='text-[#999999] text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] text-center max-w-[80%]'>
-							Trade easily with the best organic commercial farmers in Africa
-						</p>
-						<a href='https://marketplace.agrifyafrica.xyz/' target='_blank' rel='noreferrer'>
-							<div className='flex  items-center gap-2 mt-[2rem] w-fit justify-center mx-auto my-0'>
-								<a href='https://marketplace.agrifyafrica.xyz/' target='_blank' rel='noreferrer'>
-									<p className='text-[#0CC14C]'>Go to Marketplace</p>
-								</a>
-								<Image priority src='/images/go-marketplace.svg' className='' height={9.55} width={16.95} alt='' />
-							</div>
-						</a>
-						<div className='flex justify-center py-[3rem]'>
-							<Image priority src='/images/export.svg' className='' height={445.53} width={532.19} alt='learn earn grow ' />
-						</div>
-					</div>
-				</Link>
+            </div>
+
+            <div className="flex justify-center py-[3rem]">
+              <Image
+                priority
+                src="/images/export.svg"
+                className=""
+                height={445.53}
+                width={532.19}
+                alt="learn earn grow "
+              />
+            </div>
+          </div>
+        
 
 				<div
-					className='bg-[#fff] rounded-[32px] shadow-sm p-[2.375rem] text-white  flex items-center flex-col gap-4'
+					className='bg-[#fff] rounded-[32px]  shadow-sm p-[2.375rem] text-white max-w-[38rem] md:max-w-[50%]   flex items-center flex-col gap-4'
 					// onClick={() => setShow(true)}
 				>
 					<h1 className='font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[auto] text-center mt-6'>
@@ -149,19 +162,26 @@ const LandingPage = () => {
 				</div>
 			</div>
 
-			<div className='mt-[10rem] flex flex-col gap-3 justify-center items center'>
-				<h1 className='text-[1.688rem] md:text-[3rem] leading-8 md:leading-[4rem] text-[#02270F] text-center'>Join Our Pre-seed Round</h1>
-				<p className='text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] text-[#302F2D] max-w-[41.688rem] text-center mx-auto'>
-					We are are raising funds to execute our vision of taking Africa out povery through Agriculture. We are looking for organizations and
-					stakeholders that share our values and vision of a prosperous Africa, to lead a new era for agriculture with technology, providing every
-					farmer in Africa access to the tools and resources they need to run a global business.
-				</p>
-				<a href='mailto:contactagrify@gmail.com' className='flex justify-center'>
-					<button className='w-[13.25rem] h-[4rem] rounded-[32px] bg-[#0CC14C] hover:bg-[#011308] mt-[3rem] '>
-						<p className='text-white leading-6 font-medium  whitespace-nowrap '>See Deck</p>
-					</button>
-				</a>
-			</div>
+      <div className="mt-[10rem] flex flex-col gap-3 justify-center items center">
+        <h1 className="text-[1.688rem] md:text-[3rem] leading-8 md:leading-[4rem] text-[#02270F] text-center">
+          Join Our Pre-seed Round
+        </h1>
+        <p className="text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] text-[#302F2D] max-w-[41.688rem] text-center mx-auto">
+          We are are raising funds to execute our vision of taking Africa out
+          povery through Agriculture. We are looking for organizations and
+          stakeholders that share our values and vision of a prosperous Africa,
+          to lead a new era for agriculture with technology, providing every
+          farmer in Africa access to the tools and resources they need to run a
+          global business.
+        </p>
+        <a  href="mailto:admin@agrifyafrica.xyz" className="flex justify-center">
+          <button className="w-[13.25rem] h-[4rem] rounded-[32px] bg-[#0CC14C] hover:bg-[#011308] mt-[3rem] ">
+            <p className="text-white leading-6 font-medium  whitespace-nowrap ">
+              See Deck
+            </p>
+          </button>
+        </a>
+      </div>
 
 			{/* <div className="mt-[10rem]    max-w-[77rem] my-0 mx-auto">
         <div className="flex justify-between items-center w-full bg-red-500 place-content-between">
