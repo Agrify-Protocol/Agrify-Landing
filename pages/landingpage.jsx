@@ -73,8 +73,8 @@ const LandingPage = () => {
         className="my-0 mx-auto mt-[4rem] md:mt-[9rem] md:mx-[4rem] flex flex-col gap-[3rem]  md:flex-row justify-between relative w-[90%]"
         id="learn"
       >
-        <Link href="/cohort">
-          <div className="bg-[#fff]  rounded-[32px] shadow-sm p-[2.375rem]  cursor-pointer max-w-[38rem] md:max-w-[50%]  flex flex-col gap-4">
+        
+          <div className="bg-[#fff]   rounded-[32px] shadow-sm p-[2.375rem]  max-w-[38rem] md:max-w-[50%]  flex flex-col gap-4">
             <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[auto] text-center  ">
               Export Marketplace
             </h1>
@@ -112,10 +112,10 @@ const LandingPage = () => {
               />
             </div>
           </div>
-        </Link>
+        
 
 				<div
-					className='bg-[#fff] rounded-[32px] shadow-sm p-[2.375rem] text-white  flex items-center flex-col gap-4'
+					className='bg-[#fff] rounded-[32px]  shadow-sm p-[2.375rem] text-white max-w-[38rem] md:max-w-[50%]   flex items-center flex-col gap-4'
 					// onClick={() => setShow(true)}
 				>
 					<h1 className='font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[auto] text-center mt-6'>
