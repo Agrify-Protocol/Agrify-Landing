@@ -44,22 +44,22 @@ const LandingPage = () => {
 			<div id='learn-more'></div>
 
       <div className="mt-[10.188rem] flex flex-col items-center justify-center pl-[1.125rem] md:pl-0">
-        <h1 className=" text-[#484848] font-normal text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] md:text-center ">
+        <h1 className=" text-[#484848] font-normal text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] text-center ">
           A Decentralized hub for
         </h1>
-        <h1 className=" text-[#8F8F8F] font-normal text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] md:text-center ">
+        <h1 className=" text-[#8F8F8F] font-normal text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] text-center ">
           African Agriculture
         </h1>
         <div className="mt-[1.5rem] text-base md:text-[1.125rem] lg:text-xl leading-5 md:leading-[1.5rem] lg:leading-[1.688rem] text-[#302F2D] max-w-[22.25rem] md:max-w-[33.313rem] lg:max-w-[44.25rem] md:w-auto  md:px-[2rem] lg:px-0 text-center">
           <div>
-            <p>
+            <p className="text-center">
               We are a modern agriculture technology company transforming the
               agricultural sector. Our goal is to minimize the trade-offs
               between food production quality, scale, inclusivity, and
               sustainability by bundling everything a farmer needs to boost
               yield and run a profitable farm.
             </p>
-            <p className="mt-[2rem]">
+            <p className="mt-[2rem] text-center">
               With a community first approach, we help global business , as well
               as Africans and its diaspora collectively source for food from the
               best suppliers and farmers enabling them to browse, order , and
@@ -157,12 +157,12 @@ const LandingPage = () => {
 						</div>
 					</Link>
 				</div>
-				<div className='w-fit'>
+				<div className='w-fit mt-[3rem] md:mt-0'>
 					<Image priority src='/images/woman.svg' className='' height={482.82} width={470} alt='' />
 				</div>
 			</div>
 
-      <div className="mt-[10rem] flex flex-col gap-3 justify-center items center">
+      <div className="mt-[10rem] flex flex-col gap-3 justify-center items center px-[1.5rem] md:px-0 ">
         <h1 className="text-[1.688rem] md:text-[3rem] leading-8 md:leading-[4rem] text-[#02270F] text-center">
           Join Our Pre-seed Round
         </h1>
