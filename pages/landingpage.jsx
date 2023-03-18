@@ -64,27 +64,20 @@ const LandingPage = () => {
         <h1 className=" text-[#8F8F8F] font-normal text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] md:text-center ">
           African Agriculture
         </h1>
-        <div className="mt-[1.5rem] text-base md:text-[1.125rem] lg:text-xl leading-5 md:leading-[1.5rem] lg:leading-[1.688rem] text-[#302F2D] max-w-[22.25rem] md:max-w-[33.313rem] lg:max-w-[44.313rem] md:w-auto  md:px-[2rem] lg:px-0 text-center">
+        <div className="mt-[1.5rem] text-base md:text-[1.125rem] lg:text-xl leading-5 md:leading-[1.5rem] lg:leading-[1.688rem] text-[#302F2D] max-w-[22.25rem] md:max-w-[33.313rem] lg:max-w-[44.25rem] md:w-auto  md:px-[2rem] lg:px-0 text-center">
           <div>
             <p>
-              Many smallholder farmers, who account for 60% of the agricultural
-              labor force, do not have access to local or even foreign markets.
+              We are a modern agriculture technology company transforming the
+              agricultural sector. Our goal is to minimize the trade-offs
+              between food production quality, scale, inclusivity, and
+              sustainability by bundling everything a farmer needs to boost
+              yield and run a profitable farm.
             </p>
-            <p className="mt-[1.5rem]">
-              Our mission, and goal is to strengthen every aspect of the
-              agriculture supply chain , from farm to store to table. Building
-              the soft infrastructure required at any of these stages.
-            </p>
-          </div>
-          <div className="mt-[2rem]">
-            <p>
-              We help farmers create autonomous organizations , so they can sell
-              in large quantities and access sustainable credit. We help
-              businesses gain access to markets, and finance they need to grow.
-              We have created a new way for agricultural innovators to gain
-              access to funding from backers all over the world, doing away with
-              the politics of funding and making it more straightforward and
-              merit based.
+            <p className="mt-[2rem]">
+              With a community first approach, we help global business , as well
+              as Africans and its diaspora collectively source for food from the
+              best suppliers and farmers enabling them to browse, order , and
+              pay easily.
             </p>
           </div>
         </div>
@@ -99,42 +92,29 @@ const LandingPage = () => {
             <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[auto] text-center  ">
               Export Marketplace
             </h1>
-            {/* <div className="flex justify-center py-[3rem]">
-              <Image
-                priority
-                src="/images/farmer.svg"
-                className=""
-                height={427.74}
-                width={295}
-                alt="apply for next cohort"
-              />
-            </div> */}
+
             <p className="text-[#999999] text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] text-center max-w-[30.375rem]">
               Trade easily with the best organic commercial farmers in Africa
             </p>
-            <a
-              href="https://marketplace.agrifyafrica.xyz/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="flex  items-center gap-2 mt-[2rem] w-fit justify-center mx-auto my-0">
-                <a
-                  href="https://marketplace.agrifyafrica.xyz/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <p className="text-[#0CC14C]">Go to Marketplace</p>
-                </a>
-                <Image
-                  priority
-                  src="/images/go-marketplace.svg"
-                  className=""
-                  height={9.55}
-                  width={16.95}
-                  alt=""
-                />
-              </div>
-            </a>
+
+            <div className="flex  items-center gap-2 mt-[2rem] w-fit justify-center mx-auto my-0">
+              <a
+                href="https://marketplace.agrifyafrica.xyz/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p className="text-[#0CC14C]">Go to Marketplace</p>
+              </a>
+              <Image
+                priority
+                src="/images/go-marketplace.svg"
+                className=""
+                height={9.55}
+                width={16.95}
+                alt=""
+              />
+            </div>
+
             <div className="flex justify-center py-[3rem]">
               <Image
                 priority
@@ -236,7 +216,7 @@ const LandingPage = () => {
           farmer in Africa access to the tools and resources they need to run a
           global business.
         </p>
-        <a  href="mailto:contactagrify@gmail.com" className="flex justify-center">
+        <a  href="mailto:admin@agrifyafrica.xyz" className="flex justify-center">
           <button className="w-[13.25rem] h-[4rem] rounded-[32px] bg-[#0CC14C] hover:bg-[#011308] mt-[3rem] ">
             <p className="text-white leading-6 font-medium  whitespace-nowrap ">
               See Deck
