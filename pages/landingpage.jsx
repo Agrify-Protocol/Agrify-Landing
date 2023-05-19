@@ -210,7 +210,7 @@ const LandingPage = () => {
           global business.
         </p>
         <a
-          href="https://docsend.com/view/wbhmjzhjfjbte9w4"
+          href="https://docsend.com/view/iecvqc3pyv8u562q"
           target="_blank"
           rel="noreferrer"
           className="flex justify-center"
