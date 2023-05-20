@@ -27,7 +27,8 @@ const LandingPage = () => {
 
         <div className="mt-[2.5rem] text-center w-[43.813rem] ">
           <p className="text-base md:text-[1.25rem] leading-[1.25rem] md:leading-[1.688rem] text-[#302F2D] font-normal max-w-[22.375rem] md:max-w-[35.438rem] lg:max-w-[43.813rem] my-0 mx-auto ">
-            Driving African growth and welfare through agriculture.
+            Funding Africa's farming revolution through global carbon credit
+            offsets.
           </p>
         </div>
 
@@ -60,25 +61,26 @@ const LandingPage = () => {
 
       <div className="mt-[10.188rem] flex flex-col items-center justify-center pl-[1.125rem] md:pl-0">
         <h1 className=" text-[#484848] font-normal text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] text-center ">
-          A Decentralized hub for
+          The Agrify <span className="text-[#8F8F8F]">Mission</span>
         </h1>
-        <h1 className=" text-[#8F8F8F] font-normal text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] text-center ">
-          African Agriculture
-        </h1>
+        {/* <h1 className=" text-[#8F8F8F] font-normal text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] text-center ">
+          Mission
+        </h1> */}
         <div className="mt-[1.5rem] text-base md:text-[1.125rem] lg:text-xl leading-5 md:leading-[1.5rem] lg:leading-[1.688rem] text-[#302F2D] max-w-[22.25rem] md:max-w-[33.313rem] lg:max-w-[44.25rem] md:w-auto  md:px-[2rem] lg:px-0 text-center">
           <div>
             <p className="text-center">
-              We are a modern agriculture technology company transforming the
-              agricultural sector. Our goal is to minimize the trade-offs
-              between food production quality, scale, inclusivity, and
-              sustainability by bundling everything a farmer needs to boost
-              yield and run a profitable farm.
+              We're dedicated to reshaping the agricultural industry in Africa
+              through sustainable farming and carbon offsetting. We are uniquely
+              positioned to help Africa overcome the challenges it faces in its
+              agricultural sector by leveraging blockchain technology to
+              incentivize eco-friendly farming practices, promote international
+              trade of organic produce, and aid global corporations in achieving
+              their sustainability targets.
             </p>
             <p className="mt-[2rem] text-center">
-              With a community first approach, we help global business , as well
-              as Africans and its diaspora collectively source for food from the
-              best suppliers and farmers enabling them to browse, order , and
-              pay easily.
+              In doing so, we contribute to achieving the Sustainable
+              Development Goals (SDGs), reducing poverty, and ensuring a greener
+              future.
             </p>
           </div>
         </div>
