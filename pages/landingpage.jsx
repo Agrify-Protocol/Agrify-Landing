@@ -92,11 +92,12 @@ const LandingPage = () => {
       >
         <div className="bg-[#fff]   rounded-[32px] shadow-sm p-[2.375rem]  max-w-[38rem] md:max-w-[50%]  flex flex-col gap-4">
           <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[auto] text-center  ">
-            Export Marketplace
+            Carbon Credit Marketplace
           </h1>
 
           <p className="text-[#999999] text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] text-center max-w-[30.375rem]">
-            Trade easily with the best organic commercial farmers in Africa
+            Offset carbon emissions by funding regenerative agric projects in
+            Africa & receive an on chain certificate
           </p>
 
           <div className="flex  items-center gap-2 mt-[2rem] w-fit justify-center mx-auto my-0">
@@ -130,11 +131,11 @@ const LandingPage = () => {
         </div>
 
         <div
-          className="bg-[#fff] rounded-[32px]  shadow-sm p-[2.375rem] text-white max-w-[38rem] md:max-w-[50%]   flex items-center flex-col gap-4"
+          className="bg-[#fff] rounded-[32px]  shadow-sm p-[2.375rem] text-white max-w-[38rem] md:max-w-[50%]   flex  flex-col gap-4 "
           // onClick={() => setShow(true)}
         >
-          <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[auto] text-center mt-6">
-            Support and Earn
+          <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[auto] text-center ">
+          Organic Produce Marketplace
           </h1>
           {/* <div className="flex justify-center py-[3rem]">
             <Image
@@ -146,9 +147,9 @@ const LandingPage = () => {
               alt="learn earn grow "
             />
           </div> */}
-          <p className="text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] text-[#999999] text-center max-w-[80%]">
-            Support farmers by investing in public goods and earn possible
-            significant returns, product discounts and a whole lot more.
+          <p className="text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] text-[#999999] text-center ">
+            Purchase bulk organic produce from Africa with source details
+            tokenised on chain for easy verification
           </p>
           <span className="bg-[#F2F2F2] rounded-[32px] py-[0.625rem] px-[3rem] text-[#011308] my-0 mx-auto w-fit">
             Coming soon
@@ -174,8 +175,9 @@ const LandingPage = () => {
             Join Our Farmer Network
           </h1>
           <p className="text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] max-w-[26rem] mt-[2rem]">
-            Are you an agric exporter with a vision to sell your produce across
-            the world and take Africa out of its negative balance of payment?
+            Are you a farmer interested in learning more about regenerative
+            agriculture and how carbon credit offsets from global businesses can
+            fund your transition to more organic produce for exports?
           </p>
           <Link href="/cohort" className="">
             <div className="flex gap-3 w-fit hover:bg-black hover:text-white mt-[4rem] cursor-pointer px-10 py-4 rounded-[30px] bg-white">
@@ -204,12 +206,12 @@ const LandingPage = () => {
           Join Our Pre-seed Round
         </h1>
         <p className="text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] text-[#302F2D] max-w-[41.688rem] text-center mx-auto">
-          We are are raising funds to execute our vision of taking Africa out
-          povery through Agriculture. We are looking for organizations and
-          stakeholders that share our values and vision of a prosperous Africa,
-          to lead a new era for agriculture with technology, providing every
-          farmer in Africa access to the tools and resources they need to run a
-          global business.
+          We are raising funds to achieve our dream of Africa feeding the world
+          and lifting millions out of poverty. We believe that Agriculture is
+          Africa's competitive advantage, with over 60% of the world's arable
+          land, offsetting carbon emissions gives us the opportunity to fund a
+          boom in Agriculture that impacts lives forever. Join our mission
+          today!
         </p>
         <a
           href="https://docsend.com/view/iecvqc3pyv8u562q"
