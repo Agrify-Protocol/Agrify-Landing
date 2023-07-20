@@ -95,7 +95,7 @@ const LandingPage = () => {
             Carbon Credit Marketplace
           </h1>
 
-          <p className="text-[#999999] text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] text-center max-w-[30.375rem]">
+          <p className="text-[#999999] text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] text-center max-w-[30.375rem] my-0 mx-auto">
             Offset carbon emissions by funding regenerative agric projects in
             Africa & receive an on chain certificate
           </p>
@@ -147,7 +147,7 @@ const LandingPage = () => {
               alt="learn earn grow "
             />
           </div> */}
-          <p className="text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] text-[#999999] text-center ">
+          <p className="text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] text-[#999999] text-center my-0 mx-auto">
             Purchase bulk organic produce from Africa with source details
             tokenised on chain for easy verification
           </p>
