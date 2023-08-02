@@ -101,12 +101,8 @@ const LandingPage = () => {
           </p>
 
           <div className="flex  items-center gap-2 mt-[2rem] w-fit justify-center mx-auto my-0">
-            <a
-              href="https://marketplace.agrifyafrica.xyz/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <p className="text-[#0CC14C]">Go to Marketplace</p>
+            <a href="mailto:admin@agrifyafrica.xyz">
+              <p className="text-[#0CC14C]">Request Demo</p>
             </a>
             <Image
               priority
@@ -135,7 +131,7 @@ const LandingPage = () => {
           // onClick={() => setShow(true)}
         >
           <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[auto] text-center ">
-          Organic Produce Marketplace
+            Organic Produce Marketplace
           </h1>
           {/* <div className="flex justify-center py-[3rem]">
             <Image
