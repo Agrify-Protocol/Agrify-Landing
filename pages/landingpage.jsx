@@ -34,13 +34,12 @@ const LandingPage = () => {
 
         <div className=" w-fit">
           <a
-            href="https://marketplace.agrifyafrica.xyz/"
-            target="_blank"
-            rel="noreferrer"
+            href="#learn-more"
+            
           >
             <button className="w-[14.25rem] h-[4rem] rounded-[32px] bg-[#0CC14C] hover:bg-[#011308] mt-[3rem]">
               <p className="text-white leading-6 font-medium  whitespace-nowrap">
-                Go to marketplace
+                Learn More
               </p>
             </button>
           </a>
@@ -59,7 +58,7 @@ const LandingPage = () => {
 
       <div id="learn-more"></div>
 
-      <div className="mt-[10.188rem] flex flex-col items-center justify-center pl-[1.125rem] md:pl-0">
+      <div className="mt-[10.188rem] flex flex-col items-center justify-center pl-[1.125rem] md:pl-0" id="learn-more">
         <h1 className=" text-[#484848] font-normal text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] text-center ">
           The Agrify <span className="text-[#8F8F8F]">Mission</span>
         </h1>
