@@ -19,7 +19,8 @@ const Footer = () => {
           <div className="flex flex-col gap-2">
             <h4 className="font-semibold py-2 text-[#999999]">Product</h4>
             <a
-              href="https://marketplace.agrifyafrica.xyz/"
+              // href="https://marketplace.agrifyafrica.xyz/"
+               href="https://agrify-cc.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >
