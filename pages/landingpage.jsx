@@ -33,10 +33,7 @@ const LandingPage = () => {
         </div>
 
         <div className=" w-fit">
-          <a
-            href="#learn-more"
-            
-          >
+          <a href="#learn-more">
             <button className="w-[14.25rem] h-[4rem] rounded-[32px] bg-[#0CC14C] hover:bg-[#011308] mt-[3rem]">
               <p className="text-white leading-6 font-medium  whitespace-nowrap">
                 Learn More
@@ -58,7 +55,10 @@ const LandingPage = () => {
 
       <div id="learn-more"></div>
 
-      <div className="mt-[10.188rem] flex flex-col items-center justify-center pl-[1.125rem] md:pl-0" id="learn-more">
+      <div
+        className="mt-[10.188rem] flex flex-col items-center justify-center pl-[1.125rem] md:pl-0"
+        id="learn-more"
+      >
         <h1 className=" text-[#484848] font-normal text-[2.313rem] md:text-[2.5rem] lg:text-[3.75rem] leading-[2.75rem] md:leading-[3.5rem] text-center ">
           The Agrify <span className="text-[#8F8F8F]">Mission</span>
         </h1>
@@ -100,9 +100,15 @@ const LandingPage = () => {
           </p>
 
           <div className="flex  items-center gap-2 mt-[2rem] w-fit justify-center mx-auto my-0">
-            <a href="mailto:admin@agrifyafrica.xyz">
-              <p className="text-[#0CC14C]">Request Demo</p>
+            <a
+              href="https://agrify-cc.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[#0CC14C] cursor-pointer"
+            >
+              Go To Marketplace
             </a>
+
             <Image
               priority
               src="/images/go-marketplace.svg"
@@ -130,7 +136,7 @@ const LandingPage = () => {
           // onClick={() => setShow(true)}
         >
           <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[auto] text-center ">
-            Organic Produce Marketplace
+            Carbon Project & MRV Tool
           </h1>
           {/* <div className="flex justify-center py-[3rem]">
             <Image
@@ -143,12 +149,27 @@ const LandingPage = () => {
             />
           </div> */}
           <p className="text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] text-[#999999] text-center my-0 mx-auto">
-            Purchase bulk organic produce from Africa with source details
-            tokenised on chain for easy verification
+            Leading technology for carbon project generation. Trustworthy
+            measurement, reporting, and verification (MRV) of agriculture-based
+            offset
           </p>
-          <span className="bg-[#F2F2F2] rounded-[32px] py-[0.625rem] px-[3rem] text-[#011308] my-0 mx-auto w-fit">
-            Coming soon
-          </span>
+          <div className="flex  items-center gap-2 mt-[0.5rem] w-fit justify-center mx-auto my-0">
+            <a
+              href="mailto:admin@agrifyafrica.xyz"
+              className="text-[#0CC14C] cursor-pointer"
+            >
+              Request Demo
+            </a>
+
+            <Image
+              priority
+              src="/images/go-marketplace.svg"
+              className=""
+              height={9.55}
+              width={16.95}
+              alt=""
+            />
+          </div>
           <div className="flex justify-center py-[3rem]">
             <Image
               priority
