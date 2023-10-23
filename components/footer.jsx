@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row  w-[17.938rem] ">
           <div className="flex flex-col gap-2">
             <h4 className="font-semibold py-2 text-[#999999]">Product</h4>
-            <a
+            {/* <a
               // href="https://marketplace.agrifyafrica.xyz/"
                href="https://agrify-cc.vercel.app/"
               target="_blank"
@@ -27,7 +27,10 @@ const Footer = () => {
               <span className="py-2 hover:text-ag-green cursor-pointer">
                 Marketplace
               </span>
-            </a>
+            </a> */}
+            <Link href="/cohort">
+              <p className="py-2 text-slate-300 ">Marketplace</p>
+            </Link>
             <Link href="/cohort">
               <p className="py-2 text-slate-300 ">Invest</p>
             </Link>
@@ -62,7 +65,7 @@ const Footer = () => {
               instagram
             </a>
             <a
-              href="mailto:contactagrify@gmail.com"
+               href="mailto:admin@agrifyafrica.xyz" 
               className="hover:text-ag-green "
             >
               email
