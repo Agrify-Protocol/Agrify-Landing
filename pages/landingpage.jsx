@@ -91,7 +91,7 @@ const LandingPage = () => {
       >
         <div className="bg-[#fff]   rounded-[32px] shadow-sm p-[2.375rem]  max-w-[38rem] md:max-w-[50%]  flex flex-col gap-4">
           <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[auto] text-center  ">
-            Carbon Credit Marketplace
+          Agroforestry Project Marketplace
           </h1>
 
           <p className="text-[#999999] text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] text-center max-w-[30.375rem] my-0 mx-auto">
@@ -99,7 +99,7 @@ const LandingPage = () => {
             Africa & receive an on chain certificate
           </p>
 
-          <div className="flex  items-center gap-2 mt-[2rem] w-fit justify-center mx-auto my-0">
+          {/* <div className="flex  items-center gap-2 mt-[2rem] w-fit justify-center mx-auto my-0">
             <a
               href="https://agrify-cc.vercel.app/"
               target="_blank"
@@ -109,6 +109,24 @@ const LandingPage = () => {
               Go To Marketplace
             </a>
 
+            <Image
+              priority
+              src="/images/go-marketplace.svg"
+              className=""
+              height={9.55}
+              width={16.95}
+              alt=""
+            />
+          </div> */}
+
+          <div className="flex  items-center gap-2 mt-[0rem] w-fit justify-center mx-auto my-0">
+            {/* <Link href="/request-demo" className="">
+              <span  className="text-[#0CC14C] cursor-pointer">Request Demo</span>
+            </Link> */}
+
+            <a  href="mailto:admin@agrifyafrica.xyz"  className="">
+              <span  className="text-[#0CC14C] cursor-pointer">Request Demo</span>
+            </a>
             <Image
               priority
               src="/images/go-marketplace.svg"
@@ -136,7 +154,7 @@ const LandingPage = () => {
           // onClick={() => setShow(true)}
         >
           <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[auto] text-center ">
-            Carbon Project & MRV Tool
+            Impact MRV Tool
           </h1>
           {/* <div className="flex justify-center py-[3rem]">
             <Image
@@ -154,13 +172,12 @@ const LandingPage = () => {
             offset
           </p>
           <div className="flex  items-center gap-2 mt-[0.5rem] w-fit justify-center mx-auto my-0">
-            <a
-              href="mailto:admin@agrifyafrica.xyz"
-              className="text-[#0CC14C] cursor-pointer"
-            >
-              Request Demo
+            {/* <Link href="/request-demo" className="">
+              <span  className="text-[#0CC14C] cursor-pointer">Request Demo</span>
+            </Link> */}
+            <a href="mailto:admin@agrifyafrica.xyz"  className="">
+              <span  className="text-[#0CC14C] cursor-pointer">Request Demo</span>
             </a>
-
             <Image
               priority
               src="/images/go-marketplace.svg"
@@ -219,7 +236,7 @@ const LandingPage = () => {
 
       <div className="mt-[10rem] flex flex-col gap-3 justify-center items center px-[1.5rem] md:px-0 ">
         <h1 className="text-[1.688rem] md:text-[3rem] leading-8 md:leading-[4rem] text-[#02270F] text-center">
-          Join Our Pre-seed Round
+          Join Our First Raise Round
         </h1>
         <p className="text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] text-[#302F2D] max-w-[41.688rem] text-center mx-auto">
           We are raising funds to achieve our dream of Africa feeding the world
