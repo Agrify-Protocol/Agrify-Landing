@@ -1,10 +1,55 @@
 /* eslint-disable react/no-unescaped-entities */
+import { useState } from "react";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../components/navbar";
-import CohortForm from "./cohort-application";
 
 const RequestDemo = () => {
+  const router = useRouter();
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    companyName: "",
+    engagementType: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch(
+        "https://goldfish-app-56avs.ondigitalocean.app/api/v1/demo-requests",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (response.ok) {
+        // Handle successful submission
+        router.push("/request-demo-success");
+      } else {
+        // Handle error
+        console.error("Error submitting form");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
+
   const inputStyles =
     "mb-3 mt-[0.5rem] block  px-3 py-3 bg-white border  rounded-md text-sm shadow-sm focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none  ";
   return (
@@ -34,7 +79,10 @@ const RequestDemo = () => {
         </div>
         <div className="lg:w-1/2 w-full ">
           <div className="flex flex-col justify-center items-center w-full mb-[7rem]">
-            <form className="mt-[1.5rem] block w-full lg:max-w-[27.28rem]">
+            <form
+              className="mt-[1.5rem] block w-full lg:max-w-[27.28rem]"
+              onSubmit={handleSubmit}
+            >
               <h1 className="text-[#697386] text-[14.7px] leading-[23.1px] font-medium">
                 Request Demo
               </h1>
@@ -46,11 +94,12 @@ const RequestDemo = () => {
                   First Name <span className="text-[#EC1B1B]">*</span>
                 </label>
                 <input
-                  name="firstName"
+                  name="firstname"
                   id="firstName"
-                  value=""
-                  type="text"
+                  value={formData.firstname}
+                  onChange={handleChange}
                   required
+                  type="text"
                   className={inputStyles}
                 />
               </div>
@@ -62,11 +111,12 @@ const RequestDemo = () => {
                   Last Name <span className="text-[#EC1B1B]">*</span>
                 </label>
                 <input
-                  name="lastName"
+                  name="lastname"
                   id="lastName"
-                  value=""
-                  type="text"
+                  value={formData.lastname}
+                  onChange={handleChange}
                   required
+                  type="text"
                   className={inputStyles}
                 />
               </div>
@@ -78,10 +128,10 @@ const RequestDemo = () => {
                   Email Address <span className="text-[#EC1B1B]">*</span>
                 </label>
                 <input
+                  type="email"
                   name="email"
-                  id="email"
-                  value=""
-                  type="text"
+                  value={formData.email}
+                  onChange={handleChange}
                   required
                   className={inputStyles}
                 />
@@ -95,10 +145,10 @@ const RequestDemo = () => {
                   <span className="text-[#EC1B1B]">*</span>
                 </label>
                 <input
-                  name=""
-                  id=""
-                  value=""
                   type="text"
+                  name="companyName"
+                  value={formData.companyName}
+                  onChange={handleChange}
                   required
                   className={inputStyles}
                 />
@@ -111,43 +161,62 @@ const RequestDemo = () => {
                   How do you and your organization engage with carbon credit
                   <span className="text-[#EC1B1B]">*</span>
                 </label>
-              
+
                 <select
-                  name=""
-                  id=""
+                  name="engagementType"
+                  value={formData.engagementType}
+                  onChange={handleChange}
+                  required
                   className={`${inputStyles} text-[#8792a2]`}
                 >
-                <option value="volvo" className="text-[#8792a2]">
+                  <option value="" className="text-[#8792a2]">
                     Select
                   </option>
-                  <option value="volvo" className="text-[#8792a2]">
+                  <option
+                    value="Carbon Credit Supplier/ Farmer"
+                    className="text-[#8792a2]"
+                  >
                     Carbon Credit Supplier/ Farmer
                   </option>
-                  <option value="saab" className="text-[#8792a2]">
+                  <option value="Looking to buy" className="text-[#8792a2]">
                     Looking to buy
                   </option>
-                  <option value="mercedes" className="text-[#8792a2]">
+                  <option
+                    value=" Active and regular buyer"
+                    className="text-[#8792a2]"
+                  >
                     Active and regular buyer
                   </option>
-                  <option value="audi" className="text-[#8792a2]">
+                  <option value="Advisor/Broker" className="text-[#8792a2]">
                     Advisor/Broker
                   </option>
-                  <option value="audi" className="text-[#8792a2]">
+                  <option
+                    value="Carbon Project Developer"
+                    className="text-[#8792a2]"
+                  >
                     Carbon Project Developer
                   </option>
-                  <option value="audi" className="text-[#8792a2]">
+                  <option value="Researcher" className="text-[#8792a2]">
                     Researcher
                   </option>
                 </select>
               </div>
-              <Link href="/request-demo-success">
+              {/* <Link href="/request-demo-success">
                 <button
+                onClick={handleSubmit}
                   type="submit"
                   className="bg-ag-green h-[3rem] rounded-[3rem] text-white mt-9 w-full lg:w-[27.628rem]"
                 >
                   Submit
                 </button>
-              </Link>
+              </Link> */}
+              <button
+                onClick={handleSubmit}
+                type="submit"
+                className="bg-ag-green h-[3rem] rounded-[3rem] text-white mt-9 w-full lg:w-[27.628rem]"
+              >
+                Submit
+              </button>
             </form>
           </div>
         </div>
