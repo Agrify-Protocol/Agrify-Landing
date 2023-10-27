@@ -120,13 +120,13 @@ const LandingPage = () => {
           </div> */}
 
           <div className="flex  items-center gap-2 mt-[0rem] w-fit justify-center mx-auto my-0">
-            {/* <Link href="/request-demo" className="">
+            <Link href="/request-demo" className="">
               <span  className="text-[#0CC14C] cursor-pointer">Request Demo</span>
-            </Link> */}
+            </Link>
 
-            <a  href="mailto:admin@agrifyafrica.xyz"  className="">
+            {/* <a  href="mailto:admin@agrifyafrica.xyz"  className="">
               <span  className="text-[#0CC14C] cursor-pointer">Request Demo</span>
-            </a>
+            </a> */}
             <Image
               priority
               src="/images/go-marketplace.svg"
@@ -172,12 +172,12 @@ const LandingPage = () => {
             offset
           </p>
           <div className="flex  items-center gap-2 mt-[0.5rem] w-fit justify-center mx-auto my-0">
-            {/* <Link href="/request-demo" className="">
+            <Link href="/request-demo" className="">
               <span  className="text-[#0CC14C] cursor-pointer">Request Demo</span>
-            </Link> */}
-            <a href="mailto:admin@agrifyafrica.xyz"  className="">
+            </Link>
+            {/* <a href="mailto:admin@agrifyafrica.xyz"  className="">
               <span  className="text-[#0CC14C] cursor-pointer">Request Demo</span>
-            </a>
+            </a> */}
             <Image
               priority
               src="/images/go-marketplace.svg"
