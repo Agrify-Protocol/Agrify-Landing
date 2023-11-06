@@ -91,7 +91,7 @@ const LandingPage = () => {
       >
         <div className="bg-[#fff]   rounded-[32px] shadow-sm p-[2.375rem]  max-w-[38rem] md:max-w-[50%]  flex flex-col gap-4">
           <h1 className="font-medium text-[1.688rem] md:text-[2.5rem] leading-8 md:leading-[3rem] text-[#000] w-full md:w-[auto] text-center  ">
-          Agroforestry Project Marketplace
+            Agroforestry Project Marketplace
           </h1>
 
           <p className="text-[#999999] text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] text-center max-w-[30.375rem] my-0 mx-auto">
@@ -121,7 +121,9 @@ const LandingPage = () => {
 
           <div className="flex  items-center gap-2 mt-[0rem] w-fit justify-center mx-auto my-0">
             <Link href="/request-demo" className="">
-              <span  className="text-[#0CC14C] cursor-pointer">Request Demo</span>
+              <span className="text-[#0CC14C] cursor-pointer">
+                Request Demo
+              </span>
             </Link>
 
             {/* <a  href="mailto:admin@agrifyafrica.xyz"  className="">
@@ -173,7 +175,9 @@ const LandingPage = () => {
           </p>
           <div className="flex  items-center gap-2 mt-[0.5rem] w-fit justify-center mx-auto my-0">
             <Link href="/request-demo" className="">
-              <span  className="text-[#0CC14C] cursor-pointer">Request Demo</span>
+              <span className="text-[#0CC14C] cursor-pointer">
+                Request Demo
+              </span>
             </Link>
             {/* <a href="mailto:admin@agrifyafrica.xyz"  className="">
               <span  className="text-[#0CC14C] cursor-pointer">Request Demo</span>
@@ -236,15 +240,14 @@ const LandingPage = () => {
 
       <div className="mt-[10rem] flex flex-col gap-3 justify-center items center px-[1.5rem] md:px-0 ">
         <h1 className="text-[1.688rem] md:text-[3rem] leading-8 md:leading-[4rem] text-[#02270F] text-center">
-          Join Our First Raise Round
+          Join Our Fundraise
         </h1>
         <p className="text-base md:text-[1.125rem] leading-5 md:leading-[1.488rem] text-[#302F2D] max-w-[41.688rem] text-center mx-auto">
-          We are raising funds to achieve our dream of Africa feeding the world
-          and lifting millions out of poverty. We believe that Agriculture is
-          Africa's competitive advantage, with over 60% of the world's arable
-          land, offsetting carbon emissions gives us the opportunity to fund a
-          boom in Agriculture that impacts lives forever. Join our mission
-          today!
+          We are raising funds to carry out multi state pilot projects, and
+          generate carbon credits which will be sold on our platform. Proving
+          that agroforestry can not just impact the planet, but also community
+          farmers as well. Join our mission to unlock climate finance for
+          African farming communities!
         </p>
         <a
           href="https://docsend.com/view/iecvqc3pyv8u562q"
