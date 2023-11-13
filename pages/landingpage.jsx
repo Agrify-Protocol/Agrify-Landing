@@ -383,7 +383,7 @@ const LandingPage = () => {
         </div>
       </div> */}
 
-      <div className="mt-[10rem] pb-[16.5rem] flex flex-col justify-center items-center">
+      {/* <div className="mt-[10rem] pb-[16.5rem] flex flex-col justify-center items-center">
         <h1 className="text-center text-[1.688rem]  md:text-[3.5rem] leading-8  md:leading-[4.063rem] font-semibold bg-gradient-to-br from-gray-500 to-transparent bg-clip-text text-transparent">
           Creating a more{" "}
         </h1>
@@ -405,7 +405,7 @@ const LandingPage = () => {
             </button>
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
