@@ -27,8 +27,7 @@ const LandingPage = () => {
 
         <div className="mt-[2.5rem] text-center w-[43.813rem] ">
           <p className="text-base md:text-[1.25rem] leading-[1.25rem] md:leading-[1.688rem] text-[#302F2D] font-normal max-w-[22.375rem] md:max-w-[35.438rem] lg:max-w-[43.813rem] my-0 mx-auto ">
-            Funding Africa's farming revolution through global carbon credit
-            offsets.
+          Unlocking access to green finance for farmers in Africa.
           </p>
         </div>
 
